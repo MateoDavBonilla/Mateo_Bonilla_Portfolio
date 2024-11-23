@@ -1,3 +1,5 @@
+
+
 // Abre el modal
 function openModal(imagemodalId) {
     const modal = document.getElementById(imagemodalId); // Usamos el ID que se pasa como argumento
@@ -18,7 +20,7 @@ function closeModal(imagemodalId) {
 }
 
 // Cierra el modal al hacer clic fuera del contenido
-window.onclick = function(event) {
+window.onclick = function (event) {
     // Verifica si el clic fue fuera del modal
     const modals = document.querySelectorAll('.modal');
     modals.forEach(modal => {
@@ -27,3 +29,29 @@ window.onclick = function(event) {
         }
     });
 };
+
+//boton form
+const form = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+
+// Función para habilitar el botón de envío si todos los campos están llenos
+function validateForm() {
+    const formElements = form.elements;
+    let isValid = true;
+
+    // Recorre todos los campos del formulario
+    for (let i = 0; i < formElements.length; i++) {
+        const element = formElements[i];
+        if (element.type !== "submit" && element.value.trim() === "") {
+            isValid = false;
+            break;
+        }
+    }
+
+    // Habilita o deshabilita el botón según la validez del formulario
+    submitBtn.disabled = !isValid;
+}
+
+// Agregar un evento de input a los campos para validar en tiempo real
+form.addEventListener('input', validateForm);
+
