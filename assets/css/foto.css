@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Anton';
+    background-color: #414141;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.lookbook {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #949494;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Página */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #140255;
+}
+
+/* Título del Lookbook */
+.lookbook-title {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Subtítulos */
+.subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de imágenes */
+.image-placeholder {
+    width: 100%;
+    height: 600px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.image-placeholder.large {
+    width: 50%;
+    height: auto;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Sección de texto */
+.text-section {
+    text-align: center;
+    max-width: 600px;
+}
+
+.parrafo {
+    font-family: 'Doppio One', sans-serif;
+    font-weight: bold;
+}
+
+/* Páginas con dos columnas */
+.page.two-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.page.two-columns .text-section {
+    text-align: left;
+    flex: 1;
+}
+
+.page.two-columns .image-placeholder {
+    flex: 1;
+    height: 250px;
+}
+
+/* Estilos del índice */
+.index {
+    background-color: #f4e2d8;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    padding: 10px;
+    border-top: 2px solid #eee;
+    margin-top: 20px;
+}
+
+.image-placeholder img {
+    width: 100%;
+    /* Asegura que la imagen se ajuste al ancho */
+    height: 100%;
+    /* Asegura que cubra la altura */
+    display: block;
+}
+
+.video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.flecha-flotante {
+    position: fixed;
+    bottom: 50%;
+    left: 90%;
+
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro con transparencia */
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+    cursor: pointer;
+    font-size: 24px;
+    transition: background 0.3s ease;
+}
+
+.flecha-flotante:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Cambio de color al pasar el mouse */
+}
+
+/* Contenedor donde aparecerán las huellas */
+.footprint-container {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Estilos de las huellas */
+  .footprint {
+    width: 40px;
+    height: 50px;
+    background-color: #444;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.8) rotate(0deg);
+    clip-path: polygon(50% 0%, 70% 30%, 100% 60%, 80% 100%, 50% 80%, 20% 100%, 0% 60%, 30% 30%);
+    animation: appear-disappear 3s ease-in-out infinite;
+  }
+  
+  /* Animación para hacer que las huellas aparezcan y desaparezcan */
+  @keyframes appear-disappear {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) translateY(20px);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.8) translateY(-10px);
+    }
+  }
+  

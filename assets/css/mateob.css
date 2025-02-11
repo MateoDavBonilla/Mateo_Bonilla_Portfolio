@@ -11214,6 +11214,7 @@ p {
           backface-visibility: hidden;
 }
 
+
 .portfolio .portfolio-container .portfolio-item .content-holder {
   position: absolute;
   top: 50%;
@@ -11418,7 +11419,7 @@ pre .code {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -weblit-transform: translate(-50%, -50%);
-  border: 10px solid white;
+  border: 10px solid black;
   -webkit-transition: .5s !important;
   transition: .5s !important;
   -weblit-transition: .5s !important;
@@ -11426,6 +11427,7 @@ pre .code {
   box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
   width: 170px;
   border-radius: 50%;
+  background-color: black;
 }
 
 .navbar .brand .brand-txt {
@@ -11497,15 +11499,25 @@ pre .code {
 
 .header {
   position: relative;
-  height: 80vh;
+  height: 30vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .header .container {
@@ -11530,7 +11542,7 @@ pre .code {
 }
 
 .header .header-content .header-title {
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(20px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
   line-height: .7;
   margin-bottom: 25px;

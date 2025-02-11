@@ -1,0 +1,36 @@
+/* Contenedor donde aparecerán las cabezas de dragón */
+#dragon-container {
+    width: 400px;  /* Ajusta el tamaño del área */
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Estilos de las cabezas de dragón */
+  .dragon-head {
+    width: 60px;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    opacity: 0;
+    clip-path: polygon(50% 0%, 65% 20%, 80% 35%, 70% 50%, 85% 60%, 60% 70%, 50% 100%, 40% 70%, 15% 60%, 30% 50%, 20% 35%, 35% 20%);
+    animation: appear-disappear 4s ease-in-out infinite;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Animación para que aparezcan y desaparezcan */
+  @keyframes appear-disappear {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px) scale(1.2);
+    }
+  }
+  
