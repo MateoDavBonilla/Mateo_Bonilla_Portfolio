@@ -105,7 +105,24 @@
                         Design
                     </a>
                 </div>
+                <div id="project-description" class="mb-4 text-center text-muted"
+                    style="min-height: 60px; font-style: italic;">
+                    Selecciona una categoría para ver su descripción...
+                </div>
                 <div class="portfolio-container">
+                    <div class="col-md-6 col-lg-4 game new">
+                        <div class="portfolio-item">
+                            <a href="fragment.html">
+                                <img src="assets/imgs/Fragment/Fragment_Portada.png" class="img-fluid">
+                                <div class="content-holder thumbnail">
+                                    <div class="text-holder">
+                                        <h6 class="title">Fragment</h6>
+                                        <p class="subtitle">MetroidVania 2d</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 game new">
                         <a href="survival-m.html">
                             <div class="portfolio-item">
@@ -181,9 +198,20 @@
                                         <p class="subtitle">Photographic series</p>
                                     </div>
                                 </div>
-
                             </a>
-
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 design new">
+                        <div class="portfolio-item">
+                            <a href="alpina.html">
+                                <img src="assets/imgs/Alpina/Alpina.png" class="img-fluid">
+                                <div class="content-holder thumbnail">
+                                    <div class="text-holder">
+                                        <h6 class="title">Branding</h6>
+                                        <p class="subtitle">Stand Design</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -221,6 +249,24 @@
     <!-- MateoB js -->
     <script src="assets/js/mateob.js"></script>
     <script src="assets/js/modal.js"></script>
+
+    <script>
+        const descriptions = {
+            ".game": "Projects developed in Unity and other engines, focused on gameplay, art, and narrative design.",
+            ".web": "Web and mobile applications showcasing experience in UX design, frontend development, and frameworks like Angular.",
+            ".design": "Graphic design, branding, animation, and photography projects that explore visual creativity.",
+            ".new": "The latest projects added to this portfolio, covering various areas of work."
+
+        };
+
+        document.querySelectorAll('.filters a').forEach(filter => {
+            filter.addEventListener('click', function () {
+                const filterKey = this.getAttribute('data-filter');
+                const descriptionBox = document.getElementById('project-description');
+                descriptionBox.textContent = descriptions[filterKey] || '';
+            });
+        });
+    </script>
 
 </body>
 

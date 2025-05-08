@@ -121,6 +121,12 @@ body {
   display: block;
 }
 
+.image-placeholder.square img {
+  width: 60%; /* Asegura que la imagen se ajuste al ancho */
+  height: 100%; /* Asegura que cubra la altura */
+  display: block;
+}
+
 .image-dlc {
   width: 50%;
   height: 30rem;
@@ -155,8 +161,24 @@ body {
 .flecha-flotante {
   position: fixed;
   bottom: 50%;
-  left: 90%;
+  left: 1rem;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Esquinas redondeadas */
+  cursor: pointer;
+  font-size: 24px;
+  transition: background 0.3s ease;
+}
 
+.flecha-flotante.right{
+  position: fixed;
+  bottom: 50%;
+  left: 95%;
   width: 50px;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
@@ -172,4 +194,21 @@ body {
 
 .flecha-flotante:hover {
   background-color: rgba(0, 0, 0, 0.9); /* Cambio de color al pasar el mouse */
+}
+
+.projects{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 5rem;
+  height: 2.4rem;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Esquinas redondeadas */
+  cursor: pointer;
+  font-size: 24px;
+  transition: background 0.3s ease;
 }
