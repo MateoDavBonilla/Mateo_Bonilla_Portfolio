@@ -21,81 +21,107 @@
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
 
 </head>
-<div class="lookbook">
 
-    <!-- Página de portada -->
-    <div class="page">
-        <div class="lookbook-title">Fragment</div>
-        <div class="image-placeholder"><video autoplay loop muted playsinline class="video"
-                src="./assets/imgs/Fragment/Video_Promocional.mp4"></video></div>
-        <p class="subtitle">MetroidVania</p>
-        <p class="parrafo">Videojuego 2D creado en Unity, donde su mecanica principal es la esquisofrenia</p>
-    </div>
+<body>
 
-    <!-- Página con dos columnas -->
-    <div class="page two-columns">
-        <div class="image-placeholder"><img src="./assets/imgs/Fragment/unity.webp" alt=""></video></div>
-        <div class="text-section">
-            <p class="subtitle">Unity</p>
-            <p class="parrafo">Unity es un motor de desarrollo de videojuegos y experiencias interactivas en tiempo
-                real. Es una plataforma muy popular utilizada por desarrolladores para crear juegos en 2D, 3D, realidad
-                virtual (VR), realidad aumentada (AR) y simulaciones. </p>
+    <div class="lookbook">
+
+        <!-- Página de portada -->
+        <div class="page">
+            <div class="lookbook-title" style="background-color: black;"><img
+                    src="./assets/imgs/Fragment/Fragment_Portada.png" alt="fragment potraid"></div>
+        </div>
+        <p class="title">Fragment - MetroidVania</p>
+        <section class="case-wrap">
+            <!-- IZQUIERDA: tu “tabla” de labels/valores -->
+            <dl class="meta-grid">
+                <dt>CATEGORY</dt>
+                <dd>
+                    <ul class="meta-list">
+                        <li>Game Development</li>
+                        <li>UX/UI Design</li>
+                        <li>Storytelling</li>
+                    </ul>
+                </dd>
+                <dt>YEAR</dt>
+                <dd>2025</dd>
+                <dt>CLIENT</dt>
+                <dd>Indie Game</dd>
+            </dl>
+            <div class="case-desc">
+                <p>
+                    Fragment is a metroidvania inspired by the theme of schizophrenia. You progress to uncover the story
+                    while interacting with various characters who challenge your identity and reveal who you may truly
+                    be.
+                </p>
+                <p>
+                    Tech & tools: Unity (3D development), C# (programming), Adobe Illustrator (illustrations), Adobe
+                    After Effects (cinematics).
+                </p>
+                <!-- <a class="view-link" href="https://activate-bi-d05e6.web.app/" target="_blank" rel="noopener">view the
+                    website</a> -->
+            </div>
+        </section>
+        <div class="page">
+            <p class="subtitle">Promotional Video</p>
+            <div class="image-placeholder"><video autoplay loop muted playsinline class="video"
+                    src="./assets/imgs/Fragment/Video_Promocional.mp4"></video></div>
+            <div>
+                <p class="subtitle">Menu</p>
+                <div class="image-placeholder"><img src="./assets/imgs/Fragment/menu.png" alt="menu image"></img></div>
+            </div>
+            <div>
+                <p class="subtitle">Pause Menu</p>
+                <div class="image-placeholder"><img src="./assets/imgs/Fragment/pause.png" alt="pause image"></img>
+                </div>
+            </div>
+            <div>
+                <p class="subtitle">Game Over Menu</p>
+                <div class="image-placeholder"><img src="./assets/imgs/Fragment/gameover.png"
+                        alt="game over image"></img>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Página con texto a la izquierda e imagen a la derecha -->
-    <div class="page two-columns">
-        <div class="text-section">
-            <p class="subtitle">Un metroidvania diferente</p>
-            <p class="parrafo">Fragment, Un metroidvania psicológico en pixel art que te sumerge en la mente fragmentada
-                de un protagonista con esquizofrenia. El proyecto busca sensibilizar y explorar este tipo de
-                enfermedades, que aún se consideran tabú.
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Created With <i
+                    class="ti-heart text-danger"></i>
+                By <a href="#" target="_blank"><span class="text-danger">MateoB</span></a>
             </p>
         </div>
-        <div class="image-placeholder square"><img src="./assets/imgs/Fragment/fragment.png" alt=""></video></div>
+    </footer>
+
+    <div class="flecha-flotante" onclick="window.location.href='foto.html';">
+        <i class="ti-angle-double-left"></i>
     </div>
-</div>
-
-<footer class="footer py-3">
-    <div class="container">
-        <p class="small mb-0 text-light">
-            &copy;
-            <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i>
-            By <a href="#" target="_blank"><span class="text-danger">MateoB</span></a>
-        </p>
+    <div class="flecha-flotante-right" onclick="window.location.href='survival-m.html';">
+        <i class="ti-angle-double-right"></i>
     </div>
-</footer>
 
-<div class="flecha-flotante" onclick="window.location.href='foto.html';">
-    <i class="ti-angle-double-left"></i>
-</div>
-<div class="flecha-flotante right" onclick="window.location.href='survival-m.html';">
-    <i class="ti-angle-double-right"></i>
-</div>
+    <div class="projects" onclick="window.location.href='portafolio.html';">
+        <div class="btn btn-outline-danger" href="assets/cv/MATEO BONILLA CV.pdf" download="MateoBonilaCV"><i
+                class="icon-down-circled2 "></i>Projects</div>
+    </div>
 
-<div class="projects" onclick="window.location.href='portafolio.html';">
-    <div class="btn btn-outline-danger" href="assets/cv/MATEO BONILLA CV.pdf" download="MateoBonilaCV"><i
-        class="icon-down-circled2 "></i>Projects</div>
-</div>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-<!-- core  -->
-<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
-<!-- bootstrap 3 affix -->
-<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-<!-- Isotope  -->
-<script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
-<!-- Google mpas -->
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-<!-- MateoB js -->
-<script src="assets/js/mateob.js"></script>
-<script src="assets/js/modal.js"></script>
+    <!-- MateoB js -->
+    <script src="assets/js/mateob.js"></script>
+    <script src="assets/js/modal.js"></script>
 
 </body>
 

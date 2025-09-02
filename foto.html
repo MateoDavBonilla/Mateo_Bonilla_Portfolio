@@ -16,102 +16,107 @@
 
     <!-- modal -->
     <link rel="stylesheet" href="assets/css/modal.css">
-    <link rel="stylesheet" href="assets/css/foto.css">
-    
+
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
 
 </head>
-<div class="lookbook">
 
-    <!-- Página de portada -->
-    <div class="page">
-
-        <div class="image-placeholder">
-            <div class="lookbook-title">What remains after love?</div>
+<body>
+    <div class="lookbook">
+        <!-- Página de portada -->
+        <div class="page">
+            <div class="lookbook-title" style="background-color: black;">
+                What remains after love?
+            </div>
         </div>
-        <p class="subtitle">Proyecto Fotografico</p>
-        <p class="text-section">Auto Retrato</p>
+
+        <p class="title">What Remains After Love?</p>
+        <section class="case-wrap">
+            <!-- IZQUIERDA: tu “tabla” de labels/valores -->
+            <dl class="meta-grid">
+                <dt>CATEGORY</dt>
+                <dd>
+                    <ul class="meta-list">
+                        <li>Photography</li>
+                        <li>Black and White</li>
+                    </ul>
+                </dd>
+                <dt>YEAR</dt>
+                <dd>2023</dd>
+            </dl>
+            <div class="case-desc">
+                <p>
+                    Self-portrait photography project that conveys the emotional journey after a major loss, exploring
+                    vulnerability, grief, and personal resilience.
+                </p>
+                <p>
+                    Tools & process: Canon EOS Rebel T7 camera; editing and post-production in Adobe Photoshop.
+                </p>
+            </div>
+        </section>
+        <div class="page">
+            <p class="subtitle">Gallery</p>
+            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/1.jpg" alt="First Image"></div>
+
+            <div class="image-placeholder large">
+
+                <div class="image-placeholder"><img src="./assets/imgs/Fotografias/2.jpg" alt=""></video></div>
+            </div>
+            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/3.jpg" alt=""></video></div>
+
+            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/4.jpg" alt=""></video></div>
+
+            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/5.jpg" alt=""></video></div>
+
+            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/6.jpg" alt=""></video></div>
+
+            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/7.jpg" alt=""></video></div>
+            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/8.jpg" alt=""></video></div>
+            <div class="image-placeholder large">
+                <div><img src="./assets/imgs/Fotografias/9.jpg" alt=""></video></div>
+            </div>
+
+        </div>
     </div>
 
-    <!-- Página con dos columnas -->
-    <div class="page">
-        <div class="text-section">
-            <p class="subtitle">Proyecto de auto-retrato</p>
-            <p>Este proyecto se centro no solo en una intención de transmitir atravez de la fotografia lo que suele
-                suceder a una persona cuando alguien importante es alejado, sino tambien como un proyecto de resilencia.
+
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Created With <i
+                    class="ti-heart text-danger"></i>
+                By <a href="#" target="_blank"><span class="text-danger">MateoB</span></a>
             </p>
         </div>
+    </footer>
+
+    <div class="flecha-flotante" onclick="window.location.href='dlc.html';">
+        <i class="ti-angle-double-left"></i>
+    </div>
+    <div class="flecha-flotante-right" onclick="window.location.href='alpina.html';">
+        <i class="ti-angle-double-right"></i>
+    </div>
+    <div class="projects" onclick="window.location.href='portafolio.html';">
+        <div class="btn btn-outline-danger" href="assets/cv/MATEO BONILLA CV.pdf" download="MateoBonilaCV"><i
+                class="icon-down-circled2 "></i>Projects</div>
     </div>
 
-    <!-- Página con texto a la izquierda e imagen a la derecha -->
-    <div class="page">
-        <div class="image-placeholder"><img src="./assets/imgs/Fotografias/1.jpg" alt=""></video></div>
-    </div>
-    <div class="page">
-        <div class="image-placeholder large"><img src="./assets/imgs/Fotografias/2.jpg" alt=""></video></div>
-    </div>
-    <div class="page">
-        <div class="image-placeholder"><img src="./assets/imgs/Fotografias/3.jpg" alt=""></video></div>
-    </div>
-    <div class="page">
-        <div class="image-placeholder"><img src="./assets/imgs/Fotografias/4.jpg" alt=""></video></div>
-    </div>
-    <div class="page">
-        <div class="image-placeholder"><img src="./assets/imgs/Fotografias/5.jpg" alt=""></video></div>
-    </div>
-    <div class="page">
-        <div class="image-placeholder"><img src="./assets/imgs/Fotografias/6.jpg" alt=""></video></div>
-    </div>
-    <div class="page">
-        <div class="image-placeholder"><img src="./assets/imgs/Fotografias/7.jpg" alt=""></video></div>
-    </div>
-    <div class="page">
-        <div class="image-placeholder"><img src="./assets/imgs/Fotografias/8.jpg" alt=""></video></div>
-    </div>
-    <div class="page">
-        <div class="image-placeholder large"><img src="./assets/imgs/Fotografias/9.jpg" alt=""></video></div>
-    </div>
-</div>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-<footer class="footer py-3">
-    <div class="container">
-        <p class="small mb-0 text-light">
-            &copy;
-            <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i>
-            By <a href="#" target="_blank"><span class="text-danger">MateoB</span></a>
-        </p>
-    </div>
-</footer>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
-<div class="flecha-flotante" onclick="window.location.href='dlc.html';">
-    <i class="ti-angle-double-left"></i>
-</div>
-<div class="flecha-flotante right" onclick="window.location.href='alpina.html';">
-    <i class="ti-angle-double-right"></i>
-</div>
-<div class="projects" onclick="window.location.href='portafolio.html';">
-    <div class="btn btn-outline-danger" href="assets/cv/MATEO BONILLA CV.pdf" download="MateoBonilaCV"><i
-        class="icon-down-circled2 "></i>Projects</div>
-</div>
 
-<!-- core  -->
-<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-<!-- bootstrap 3 affix -->
-<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-<!-- Isotope  -->
-<script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-<!-- Google mpas -->
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-<!-- MateoB js -->
-<script src="assets/js/mateob.js"></script>
-<script src="assets/js/modal.js"></script>
+    <!-- MateoB js -->
+    <script src="assets/js/mateob.js"></script>
+    <script src="assets/js/modal.js"></script>
 
 </body>
 
