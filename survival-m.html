@@ -17,95 +17,100 @@
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
 
 </head>
-<div class="lookbook">
 
-    <!-- Página de portada -->
-    <div class="page">
-        <div class="lookbook-title" style="background-color: brown;">SURVIVAL M</div>
+<body>
+    <div class="lookbook">
+
+        <!-- Página de portada -->
+        <div class="page">
+            <div class="lookbook-title" style="background-color: brown;">SURVIVAL M</div>
+        </div>
+        <p class="title">Survivial M</p>
+        <section class="case-wrap">
+            <!-- IZQUIERDA: tu “tabla” de labels/valores -->
+            <dl class="meta-grid">
+                <dt>CATEGORY</dt>
+                <dd>
+                    <ul class="meta-list">
+                        <li>Game Development</li>
+                        <li>Unity 3D Design</li>
+                        <li>UX/UI Design</li>
+                    </ul>
+                </dd>
+                <dt>YEAR</dt>
+                <dd>2022</dd>
+            </dl>
+            <div class="case-desc">
+                <p>
+                    Survival M is a playable demo built with Unity 3D, inspired by classic Resident Evil titles. Your
+                    goal
+                    is to escape a zombie-ridden city, manage scarce resources, and defeat a final boss.
+                </p>
+                <p>
+                    Tech & tools: Unity (3D development), C# (programming).
+                </p>
+            </div>
+        </section>
+        <div class="page">
+            <p class="subtitle"> Demo Video</p>
+            <div class="image-placeholder"><video autoplay loop muted playsinline class="video"
+                    src="./assets/imgs/survivalM/survival-m.m4v"></video></div>
+            <div>
+                <p class="subtitle">Menu</p>
+                <img class="image-placeholder" src="./assets/imgs/survivalM/survival.jpg" alt="pause image">
+            </div>
+            <div>
+                <p class="subtitle">Pause Menu</p>
+                <img class="image-placeholder" src="./assets/imgs/survivalM/survivalM8.png" alt="">
+            </div>
+            <div>
+                <p class="subtitle">Boss Batle</p>
+                <img class="image-placeholder" src="./assets/imgs/survivalM/survivalM6.png" alt="">
+            </div>
+            <div>
+                <p class="subtitle">Game Over Menu</p>
+                <img class="image-placeholder" src="./assets/imgs/survivalM/survivalM10.png" alt="">
+            </div>
+        </div>
+
     </div>
-    <p class="title">Survivial M</p>
-    <section class="case-wrap">
-        <!-- IZQUIERDA: tu “tabla” de labels/valores -->
-        <dl class="meta-grid">
-            <dt>CATEGORY</dt>
-            <dd>
-                <ul class="meta-list">
-                    <li>Game Development</li>
-                    <li>Unity 3D Design</li>
-                    <li>UX/UI Design</li>
-                </ul>
-            </dd>
-            <dt>YEAR</dt>
-            <dd>2022</dd>
-        </dl>
-        <div class="case-desc">
-            <p>
-                Survival M is a playable demo built with Unity 3D, inspired by classic Resident Evil titles. Your goal
-                is to escape a zombie-ridden city, manage scarce resources, and defeat a final boss.
+
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Created With <i
+                    class="ti-heart text-danger"></i>
+                By <a href="#" target="_blank"><span class="text-danger">MateoB</span></a>
             </p>
-            <p>
-                Tech & tools: Unity (3D development), C# (programming).
-            </p>
         </div>
-    </section>
-    <div class="page">
-        <p class="subtitle"> Demo Video</p>
-        <div class="image-placeholder"><video autoplay loop muted playsinline class="video"
-                src="./assets/imgs/survivalM/survival-m.m4v"></video></div>
-        <div>
-            <p class="subtitle">Menu</p>
-            <img class="image-placeholder" src="./assets/imgs/survivalM/survival.jpg" alt="pause image">
+    </footer>
+
+    <a class="flecha-flotante" href='fragment.html'>
+        <i class="ti-angle-double-left"></i>
+    </a>
+    <a class="flecha-flotante-right" href='dto.html'>
+        <i class="ti-angle-double-right"></i>
+    </a>
+    <a class="projects" href="portafolio.html">
+        <div class="btn btn-outline-danger">
+            Projects
         </div>
-        <div>
-            <p class="subtitle">Pause Menu</p>
-            <img class="image-placeholder" src="./assets/imgs/survivalM/survivalM8.png" alt="">
-        </div>
-        <div>
-            <p class="subtitle">Boss Batle</p>
-            <img class="image-placeholder" src="./assets/imgs/survivalM/survivalM6.png" alt="">
-        </div>
-        <div>
-            <p class="subtitle">Game Over Menu</p>
-            <img class="image-placeholder" src="./assets/imgs/survivalM/survivalM10.png" alt="">
-        </div>
-    </div>
+    </a>
 
-</div>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-<footer class="footer py-3">
-    <div class="container">
-        <p class="small mb-0 text-light">
-            &copy;
-            <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i>
-            By <a href="#" target="_blank"><span class="text-danger">MateoB</span></a>
-        </p>
-    </div>
-</footer>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
-<div class="flecha-flotante" onclick="window.location.href='fragment.html';">
-    <i class="ti-angle-double-left"></i>
-</div>
-<div class="flecha-flotante-right" onclick="window.location.href='dto.html';">
-    <i class="ti-angle-double-right"></i>
-</div>
-<div class="projects" onclick="window.location.href='portafolio.html';">
-    <div class="btn btn-outline-danger" href="assets/cv/MATEO BONILLA CV.pdf" download="MateoBonilaCV"><i
-            class="icon-down-circled2 "></i>Projects</div>
-</div>
-
-<!-- core  -->
-<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-<!-- bootstrap 3 affix -->
-<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-<!-- Isotope  -->
-<script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-<!-- MateoB js -->
-<script src="assets/js/mateob.js"></script>
+    <!-- MateoB js -->
+    <script src="assets/js/mateob.js"></script>
 
 
 </body>
