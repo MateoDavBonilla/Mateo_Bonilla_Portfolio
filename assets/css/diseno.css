@@ -324,6 +324,10 @@ body {
     padding-left: 24px;
   }
 
+  .lookbook-title {
+    height: 20rem;
+  }
+
   :root {
     --label-w: 130px;
   }
