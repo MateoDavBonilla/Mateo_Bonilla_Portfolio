@@ -4,36 +4,34 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Mateo Bonilla.">
-    <meta name="author" content="Devcrud">
-    <title>MateoBonilla Portfolio</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + MateoB main styles -->
-    <link rel="stylesheet" href="assets/css/mateob.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
+    <meta name="description" content="Contact page of Mateo Bonilla.">
+    <meta name="author" content="Mateo Bonilla">
+    <title data-i18n="contact.title">Mateo Bonilla | Contact</title>
 
-    <!-- modal -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/mateob.css">
     <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/modalmensaje.css">
-
+    <link rel="stylesheet" href="assets/css/i18n.css">
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
-
 </head>
 
 <body>
     <header class="header">
         <video autoplay loop muted playsinline class="background-video">
             <source src="./assets/imgs/idex.m4v" type="video/mp4">
-            Tu navegador no soporta videos en HTML5.
+            Your browser does not support HTML5 video.
         </video>
         <div class="container">
             <div class="header-content">
-                <h1 class="header-title">Mateo Bonilla</h1>
-                <h6 class="header-mono">Front-End Developer/Designer | Game Developer | Graphic Designer</h6>
+                <h1 class="header-title" data-i18n="contact.name">Mateo Bonilla</h1>
+                <h6 class="header-mono" data-i18n="contact.subtitle">
+                    Front-End Developer | Game Developer | Graphic Designer
+                </h6>
             </div>
         </div>
     </header>
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
@@ -43,33 +41,25 @@
             </button>
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link ">Home</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a href="resume.html" class="nav-link">Resume</a>
-                    </li>
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link" data-i18n="nav.resume">Resume</a></li>
                 </ul>
                 <ul class="navbar-nav brand">
                     <img src="assets/imgs/nite.png" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Mateo Bonilla</h5>
-                        <div class="brand-subtitle">Web Designer | Game Developer | Graphic Designer</div>
+                        <div class="brand-subtitle" data-i18n="contact.brandSubtitle">
+                            Web Designer | Game Developer | Graphic Designer
+                        </div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
+                    <li class="nav-item"><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="portafolio.html" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="contact.html" class="nav-link active">Contact</a>
-                    </li>
+                    <li class="nav-item"><a href="portafolio.html" class="nav-link"
+                            data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li class="nav-item last-item"><a href="contact.html" class="nav-link active"
+                            data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -82,100 +72,110 @@
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
+
         <div class="container">
             <div class="row">
+                <!-- Form -->
                 <div class="col-lg-8">
                     <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
+                        <h4 class="contact-title" data-i18n="contact.formTitle">Send a Message</h4>
                         <form id="contactForm" name="contact" action="#home" method="POST" netlify>
                             <div class="form-group">
-                                <input class="form-control" type="text" name="name" placeholder="Name *" required>
+                                <input class="form-control" type="text" name="name"
+                                    data-i18n-placeholder="contact.namePlaceholder" placeholder="Name *" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" name="email" placeholder="Email *" required>
+                                <input class="form-control" type="email" name="email"
+                                    data-i18n-placeholder="contact.emailPlaceholder" placeholder="Email *" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" name="message" placeholder=" Message *" rows="7"
+                                <textarea class="form-control" name="message"
+                                    data-i18n-placeholder="contact.messagePlaceholder" placeholder="Message *" rows="7"
                                     required></textarea>
                             </div>
-                            <div class="form-group ">
+                            <div class="form-group">
                                 <button type="submit" id="submitBtn" class="form-control btn btn-primary"
-                                    onclick="openModal('success')" disabled>Send Message</button>
+                                    onclick="openModal('success')" disabled data-i18n="contact.sendBtn">
+                                    Send Message
+                                </button>
                             </div>
                         </form>
                     </div>
                 </div>
+
+                <!-- Contact info -->
                 <div class="col-lg-4">
                     <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
+                        <h4 class="contact-title" data-i18n="contact.getInTouch">Get in Touch</h4>
+
                         <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted"><a
-                                            href="https://wa.me/+593988432826" target="_blank">+ (593)
-                                            988432826</a></span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
+                            <div class="col-1 pt-1 mr-1"><i class="ti-mobile icon-md"></i></div>
                             <div class="col-10">
-                                <h6 class="d-inline">Country :<br> <span class="text-muted">Quito-Ecuador</span></h6>
+                                <h6 class="d-inline" data-i18n="contact.phone">Phone:</h6>
+                                <br>
+                                <span class="text-muted">
+                                    <a href="https://wa.me/+593988432826" target="_blank">+ (593) 988432826</a>
+                                </span>
                             </div>
                         </div>
+
                         <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
+                            <div class="col-1 pt-1 mr-1"><i class="ti-map-alt icon-md"></i></div>
                             <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted"><a
-                                            href="https://outlook.live.com/mail/0/deeplink/compose?to=mateobonilla95@outlook.com&subject=Contacto%20desde%20tu%20portafolio&body=Hola%20Mateo,%0D%0AQuisiera%20más%20información."
-                                            target="_blank">
-                                            mateobonilla95@outlook.com
-                                        </a></span>
-                                </h6>
+                                <h6 class="d-inline" data-i18n="contact.country">Country:</h6>
+                                <br>
+                                <span class="text-muted">Quito, Ecuador</span>
                             </div>
                         </div>
+
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1"><i class="ti-envelope icon-md"></i></div>
+                            <div class="col-10">
+                                <h6 class="d-inline" data-i18n="contact.email">Email:</h6>
+                                <br>
+                                <span class="text-muted">
+                                    <a href="mailto:mateobonilla95@outlook.com">mateobonilla95@outlook.com</a>
+                                </span>
+                            </div>
+                        </div>
+
                         <ul class="social-icons pt-4">
                             <li class="social-item"><a class="social-link text-dark"
                                     href="https://www.facebook.com/mateo.bonilla.562?locale=es_LA" target="_blank"><i
-                                        class="ti-facebook" aria-hidden="true"></i></a></li>
+                                        class="ti-facebook"></i></a></li>
                             <li class="social-item"><a class="social-link text-dark"
                                     href="https://www.linkedin.com/in/mateodbonillaerazo/" target="_blank"><i
-                                        class="ti-linkedin" aria-hidden="true"></i></a></li>
-                            <!-- <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" 
-                                        aria-hidden="true"></i></a></li>-->
+                                        class="ti-linkedin"></i></a></li>
                             <li class="social-item"><a class="social-link text-dark"
-                                    href="https://www.instagram.com/nite.mb/" target="_blank"><i class="ti-instagram"
-                                        aria-hidden="true"></i></a></li>
+                                    href="https://www.instagram.com/nite.mb/" target="_blank"><i
+                                        class="ti-instagram"></i></a></li>
                             <li class="social-item"><a class="social-link text-dark"
-                                    href="https://github.com/MateoDavBonilla" target="_blank"><i class="ti-github"
-                                        aria-hidden="true"></i></a></li>
+                                    href="https://github.com/MateoDavBonilla" target="_blank"><i
+                                        class="ti-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+
             <!-- Modal -->
             <div id="success" class="mensaje">
                 <div class="mensaje-content">
-                    <h2>¡Mensaje enviado!</h2>
-                    <p>Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.</p>
-                    <button onclick="closeModal('success')" class="btn btn-outline-primary">Cerrar</button>
+                    <h2 data-i18n="contact.modal.title">Message Sent!</h2>
+                    <p data-i18n="contact.modal.text">Your message has been sent successfully. I’ll get back to you
+                        soon.</p>
+                    <button onclick="closeModal('success')" class="btn btn-outline-primary"
+                        data-i18n="contact.modal.close">Close</button>
                 </div>
             </div>
-
         </div>
     </div>
+
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy;
-                <script>document.write(new Date().getFullYear())</script> Created With <i
-                    class="ti-heart text-danger"></i> By <a href="#" target="_blank"><span
-                        class="text-danger">MateoB</span></a>
+                <script>document.write(new Date().getFullYear())</script>
+                Created with <i class="ti-heart text-danger"></i> by <span class="text-danger">MateoB</span>
             </p>
         </div>
     </footer>
@@ -184,10 +184,8 @@
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Isotope  -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
@@ -196,7 +194,11 @@
     <!-- <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> -->
 
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.16/dist/umd/i18next.min.js"></script>
+
     <!-- MateoB js -->
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/mateob.js"></script>
     <script src="assets/js/modal.js"></script>
 

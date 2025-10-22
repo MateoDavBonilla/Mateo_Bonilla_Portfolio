@@ -4,32 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Mateo Bonilla.">
-    <meta name="author" content="Devcrud">
-    <title>MateoBonilla Portfolio</title>
+    <meta name="description" content="Professional services by Mateo Bonilla.">
+    <meta name="author" content="Mateo Bonilla">
+    <title data-i18n="services.title">Mateo Bonilla | Services</title>
+
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + MateoB main styles -->
+
+    <!-- main styles -->
     <link rel="stylesheet" href="assets/css/mateob.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/i18n.css">
 
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
-
 </head>
 
 <body>
     <header class="header">
         <video autoplay loop muted playsinline class="background-video">
             <source src="./assets/imgs/resume.m4v" type="video/mp4">
-            Tu navegador no soporta videos en HTML5.
+            Your browser does not support HTML5 video.
         </video>
         <div class="container">
             <div class="header-content">
-                <h1 class="header-title">Mateo Bonilla</h1>
-                <h6 class="header-mono">Front-End Developer/Designer | Game Developer | Graphic Designer</h6>
+                <h1 class="header-title" data-i18n="services.name">Mateo Bonilla</h1>
+                <h6 class="header-mono" data-i18n="services.subtitle">Front-End Developer | Game Developer | Graphic
+                    Designer</h6>
             </div>
         </div>
     </header>
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
@@ -39,241 +42,150 @@
             </button>
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a href="resume.html" class="nav-link">Resume</a>
-                    </li>
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link" data-i18n="nav.resume">Resume</a></li>
                 </ul>
                 <ul class="navbar-nav brand">
-                    <img src="assets/imgs/nite.png" alt="" class="brand-img">
+                    <img src="assets/imgs/nite.png" alt="logo" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Mateo Bonilla</h5>
-                        <div class="brand-subtitle">Web Designer | Game Developer | Graphic Designer</div>
+                        <div class="brand-subtitle" data-i18n="services.brandSubtitle">Web Designer | Game Developer |
+                            Graphic Designer</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link active">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="portafolio.html" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
+                    <li class="nav-item"><a href="services.html" class="nav-link active"
+                            data-i18n="nav.services">Services</a></li>
+                    <li class="nav-item"><a href="portafolio.html" class="nav-link"
+                            data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li class="nav-item last-item"><a href="contact.html" class="nav-link"
+                            data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <section class="section" id="service">
         <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+            <h2 class="mb-5 pb-4"><span class="text-danger" data-i18n="services.my">My</span> <span
+                    data-i18n="services.titleSection">Services</span></h2>
             <div class="row">
+
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-id-badge text-danger" aria-hidden="true"></i>
-                        </div>
+                        <div class="card-header has-icon"><i class="ti-id-badge text-danger"></i></div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Web Design</h5>
-                            <P class="subtitle">
-                                Web design services include custom website design, front-end and back-end development,
-                                user experience (UX) and user interface (UI) design, and performance optimization.
-                                Additionally, services extend to e-commerce solutions, mobile-first designs, and ongoing
-                                maintenance and updates for security and content management.</P>
+                            <h5 class="mb-3 card-title text-dark" data-i18n="services.webTitle">Web Design</h5>
+                            <p class="subtitle" data-i18n="services.webDesc">
+                                Custom website design, front-end and back-end development, UX/UI design, and performance
+                                optimization. Includes e-commerce solutions, mobile-first layouts, and continuous
+                                maintenance for security and content management.
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-game text-danger" aria-hidden="true"></i>
-                        </div>
+                        <div class="card-header has-icon"><i class="ti-game text-danger"></i></div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Game Development</h5>
-                            <P class="subtitle">Include concept design, programming, and
-                                coding for mechanics and AI. Art and animation encompass character modeling, asset
-                                creation, and environmental design. Sound and music cover effects, voiceovers, and
-                                composing tracks. Quality assurance ensures testing, bug fixing, and performance
-                                optimization, with publishing services for distribution and marketing.</P>
+                            <h5 class="mb-3 card-title text-dark" data-i18n="services.gameTitle">Game Development</h5>
+                            <p class="subtitle" data-i18n="services.gameDesc">
+                                Concept design, programming mechanics and AI, 3D modeling, animation, and sound
+                                integration. Includes quality testing, performance optimization, and publishing support
+                                for distribution and marketing.
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-mobile text-danger" aria-hidden="true"></i>
-                        </div>
+                        <div class="card-header has-icon"><i class="ti-mobile text-danger"></i></div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">App Development</h5>
-                            <P class="subtitle">App development services include UI/UX design, programming for Android,
-                                and cross-platform apps, and backend development with API and database integration.
-                                Testing ensures performance, while maintenance provides ongoing updates for security and
-                                compatibility.</P>
+                            <h5 class="mb-3 card-title text-dark" data-i18n="services.appTitle">App Development</h5>
+                            <p class="subtitle" data-i18n="services.appDesc">
+                                UI/UX design, Android and cross-platform programming, backend API integration, and
+                                database setup. Includes testing, performance monitoring, and long-term maintenance for
+                                security and compatibility.
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-pencil-alt text-danger" aria-hidden="true"></i>
-                        </div>
+                        <div class="card-header has-icon"><i class="ti-pencil-alt text-danger"></i></div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Graphic Communication</h5>
-                            <P class="subtitle">Include creating visual identities (logos, brand guidelines), designing
-                                advertising materials (ads, banners), developing packaging that reflects brand
-                                messaging, producing infographics and data visualizations for clarity, and crafting
-                                promotional materials for both print and digital platforms.</P>
+                            <h5 class="mb-3 card-title text-dark" data-i18n="services.graphicTitle">Graphic
+                                Communication</h5>
+                            <p class="subtitle" data-i18n="services.graphicDesc">
+                                Visual identity creation (logos, brand manuals), advertising design (ads, banners),
+                                packaging design, infographics, and promotional materials for both print and digital
+                                platforms.
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-video-clapper text-danger" aria-hidden="true"></i>
-                        </div>
+                        <div class="card-header has-icon"><i class="ti-video-clapper text-danger"></i></div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Video Editor</h5>
-                            <P class="subtitle">
-                                Video editing services include editing and cutting raw footage into a polished final
-                                product, color correction and grading for visual enhancement, adding motion graphics and
-                                visual effects to elevate the video, audio editing to improve clarity and sync, and
-                                optimizing video formats for different platforms or purposes.</P>
+                            <h5 class="mb-3 card-title text-dark" data-i18n="services.videoTitle">Video Editing</h5>
+                            <p class="subtitle" data-i18n="services.videoDesc">
+                                Video editing, color correction, motion graphics, sound design, and format optimization
+                                for various platforms and purposes.
+                            </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-widget text-danger" aria-hidden="true"></i>
-                        </div>
+                        <div class="card-header has-icon"><i class="ti-widget text-danger"></i></div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">UX Design</h5>
-                            <P class="subtitle">UX design services include user research to understand needs,
-                                wireframing and prototyping for layout and functionality, information architecture for
-                                clear navigation, UI design for intuitive interfaces, and usability testing to ensure a
-                                seamless user experience.</P>
+                            <h5 class="mb-3 card-title text-dark" data-i18n="services.uxTitle">UX Design</h5>
+                            <p class="subtitle" data-i18n="services.uxDesc">
+                                User research, wireframing, prototyping, information architecture, UI design, and
+                                usability testing for seamless user experiences.
+                            </p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- <section class="section bg-custom-gray" id="price">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Free</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">0</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">5 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item"><span class="text-muted">No Domain</span></li>
-                            <li class="list-item">1 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Basic</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">10</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">50 <span class="text-muted">Project</span></li>
-                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">1<span class="text-muted">Domain</span></li>
-                            <li class="list-item">5 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center price-card-requried mb-4">
-                        <h3 class="price-card-title">Exclusive</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">25</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">150 <span class="text-muted">Project</span></li>
-                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">5<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">15<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Pro</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">99</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">500 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">10<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section class="section bg-dark py-5">
         <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <a class="btn bg-primary w-lg" href="contact.html">Hire me</a>
+            <h2 class="text-light mb-5 font-weight-normal" data-i18n="services.freelance">I am available for freelance
+                work</h2>
+            <a class="btn bg-primary w-lg" href="contact.html" data-i18n="services.hire">Hire me</a>
         </div>
     </section>
-
 
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy;
-                <script>document.write(new Date().getFullYear())</script> Created With <i
-                    class="ti-heart text-danger"></i> By <a href="#" target="_blank"><span
-                        class="text-danger">MateoB</span></a>
+                <script>document.write(new Date().getFullYear())</script>
+                <span>Created with</span> <i class="ti-heart text-danger"></i>
+                <span>by</span> <span class="text-danger">MateoB</span>
             </p>
         </div>
     </footer>
 
-    <!-- core  -->
+    <!-- scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.16/dist/umd/i18next.min.js"></script>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-    <!-- MateoB js -->
     <script src="assets/js/mateob.js"></script>
-
-
+    <script src="assets/js/i18n.js"></script>
 </body>
 
 </html>

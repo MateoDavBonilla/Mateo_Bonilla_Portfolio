@@ -4,32 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Mateo Bonilla.">
-    <meta name="author" content="Devcrud">
-    <title>MateoBonilla Portfolio</title>
+    <meta name="description" content="Mateo Bonilla - Resume">
+    <meta name="author" content="Mateo Bonilla">
+    <title data-i18n="resume.title">Mateo Bonilla | Resume</title>
+
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + MateoB main styles -->
+    <!-- main styles -->
     <link rel="stylesheet" href="assets/css/mateob.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
-
+    <link rel="stylesheet" href="assets/css/i18n.css">
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
-
 </head>
 
 <body>
     <header class="header">
         <video autoplay loop muted playsinline class="background-video">
             <source src="./assets/imgs/resume.m4v" type="video/mp4">
-            Tu navegador no soporta videos en HTML5.
+            Your browser does not support HTML5 video.
         </video>
         <div class="container">
             <div class="header-content">
-                <h1 class="header-title">Mateo Bonilla</h1>
-                <h6 class="header-mono">Front-End Developer/Designer | Game Developer | Graphic Designer</h6>
+                <h1 class="header-title" data-i18n="resume.name">Mateo Bonilla</h1>
+                <h6 class="header-mono" data-i18n="resume.subtitle">Front-End Developer/Designer | Game Developer | Graphic
+                    Designer</h6>
             </div>
         </div>
     </header>
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
@@ -39,165 +40,152 @@
             </button>
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a href="resume.html" class="nav-link active">Resume</a>
+                    <li class="nav-item"><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link active" data-i18n="nav.resume">Resume</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
-                    <img src="assets/imgs/nite.png" alt="" class="brand-img">
+                    <img src="assets/imgs/nite.png" alt="logo" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Mateo Bonilla</h5>
-                        <div class="brand-subtitle">Web Designer | Game Developer | Graphic Designer</div>
+                        <div class="brand-subtitle" data-i18n="resume.brandSubtitle">Web Designer | Game Developer |
+                            Graphic Designer</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
+                    <li class="nav-item"><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="portafolio.html" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
+                    <li class="nav-item"><a href="portafolio.html" class="nav-link"
+                            data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li class="nav-item last-item"><a href="contact.html" class="nav-link"
+                            data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--Resume Section-->
+
     <section class="section" id="resume">
         <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <h2 class="mb-5"><span class="text-danger" data-i18n="resume.my">My</span> <span
+                    data-i18n="resume.titleSection">Resume</span></h2>
             <div class="row">
+
+                <!-- Expertise -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Expertise</h4>
-                                <span class="line"></span>
-                            </div>
+                            <h4 data-i18n="resume.expertise">Expertise</h4>
+                            <span class="line"></span>
                         </div>
                         <div class="card-body">
                             <h6 class="title text-danger">2022 - Present</h6>
-                            <P>Front-end Developer</P>
-                            <P class="subtitle">Expert in creating responsive, user-friendly web interfaces using modern
-                                frameworks like React and Angular. Skilled in HTML, CSS, and JavaScript. Strong focus on
-                                accessibility, performance optimization, and
-                                seamless user experiences.</P>
+                            <p data-i18n="resume.frontendTitle">Front-End Developer</p>
+                            <p class="subtitle" data-i18n="resume.frontendDesc">
+                                Expert in creating responsive, user-friendly web interfaces using modern frameworks such
+                                as React and Angular.
+                                Skilled in HTML, CSS, and JavaScript. Strong focus on accessibility, performance
+                                optimization, and seamless user experiences.
+                            </p>
                             <hr>
+
                             <h6 class="title text-danger">2022 - Present</h6>
-                            <P>Game Development</P>
-                            <P class="subtitle">
+                            <p data-i18n="resume.gameTitle">Game Development</p>
+                            <p class="subtitle" data-i18n="resume.gameDesc">
                                 Experienced in programming immersive gameplay mechanics and interactive systems using
-                                engines like Unity (C#). Proficient in designing
-                                intuitive, responsive UI/UX elements and seamless player feedback systems. Focused on
-                                delivering high-quality visuals, optimized performance, and engaging player experiences.
-                            </P>
+                                Unity (C#). Proficient in designing intuitive,
+                                responsive UI/UX elements and seamless player feedback systems.
+                            </p>
                             <hr>
+
                             <h6 class="title text-danger">2022 - Present</h6>
-                            <P>UX Designer</P>
-                            <P class="subtitle">Experienced UX designer and developer for web, app, and games. Skilled
-                                in creating intuitive, responsive interfaces and seamless user experiences. Proficient
-                                in HTML, CSS, JavaScript, Unity (C#).</P>
+                            <p data-i18n="resume.uxTitle">UX Designer</p>
+                            <p class="subtitle" data-i18n="resume.uxDesc">
+                                UX designer and developer for web, app, and game interfaces. Skilled in building
+                                intuitive and responsive experiences across platforms.
+                            </p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Education -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Education</h4>
-                                <span class="line"></span>
-                            </div>
+                            <h4 data-i18n="resume.education">Education</h4>
+                            <span class="line"></span>
                         </div>
                         <div class="card-body">
                             <h6 class="title text-danger">2022 - 2025</h6>
-                            <P>Bachelor's Degree in Interactive Design</P>
-                            <P class="subtitle">Expertise in UX design and
-                                programming for web, app, and games. Skilled in creating intuitive, responsive
-                                interfaces and seamless user experiences using HTML, CSS, JavaScript, Unity (C#), and
-                                other programming languages.</P>
+                            <p data-i18n="resume.degree">Bachelor's Degree in Interactive Design</p>
+                            <p class="subtitle" data-i18n="resume.degreeDesc">
+                                Specialized in UX design and programming for web, apps, and games. Skilled in HTML, CSS,
+                                JavaScript, Unity (C#), and more.
+                            </p>
                             <hr>
                             <h6 class="title text-danger">2022 - 2025</h6>
-                            <P>Minor in Communication Design</P>
-                            <P class="subtitle">Experienced in photography, Adobe Design, and graphic design, with a
-                                focus
-                                on visual storytelling and effective communication.</P>
+                            <p data-i18n="resume.minor">Minor in Communication Design</p>
+                            <p class="subtitle" data-i18n="resume.minorDesc">
+                                Experienced in photography, Adobe design, and graphic design, focusing on visual
+                                storytelling and communication.
+                            </p>
                             <hr>
                             <h6 class="title text-danger">2008 - 2012</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">High School Degree in Physics and Mathematics
-
-                                Strong foundation in analytical thinking and problem-solving, with a focus on physics,
-                                mathematics, and technical skills..</P>
-
+                            <p data-i18n="resume.highschool">High School Diploma</p>
+                            <p class="subtitle" data-i18n="resume.highschoolDesc">
+                                Strong foundation in analytical thinking, problem-solving, and technical skills, with
+                                emphasis on physics and mathematics.
+                            </p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Skills & Languages -->
                 <div class="col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>
-                            </div>
+                            <h4 data-i18n="resume.skills">Skills</h4>
+                            <span class="line"></span>
                         </div>
                         <div class="card-body pb-2">
-                            <h6>HTML &amp; CSS</h6>
+                            <h6>HTML & CSS</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" style="width: 97%"></div>
                             </div>
                             <h6>JavaScript</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" style="width: 85%"></div>
                             </div>
                             <h6>PHP</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" style="width: 80%"></div>
                             </div>
                             <h6>MySQL</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" style="width: 90%"></div>
                             </div>
                             <h6>C#</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" style="width: 90%"></div>
                             </div>
                             <h6>Adobe Design</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
-                                <span class="line"></span>
-                            </div>
+                            <h4 data-i18n="resume.languages">Languages</h4>
+                            <span class="line"></span>
                         </div>
                         <div class="card-body pb-2">
                             <h6>English</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" style="width: 85%"></div>
                             </div>
                             <h6>Italian</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
@@ -205,157 +193,26 @@
             </div>
         </div>
     </section>
-    <section class="section bg-dark text-center">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">8k</h1>
-                            <p class="text-light mb-1">Hours Worked</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">10</h1>
-                            <p class="text-light mb-1">Project Finished</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">10</h1>
-                            <p class="text-light mb-1">Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-pencil-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">500</h1>
-                            <p class="text-light mb-1">Illustration art</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- <section class="section bg-custom-gray" id="price">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Free</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">0</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">5 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item"><span class="text-muted">No Domain</span></li>
-                            <li class="list-item">1 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Basic</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">10</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">50 <span class="text-muted">Project</span></li>
-                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">1<span class="text-muted">Domain</span></li>
-                            <li class="list-item">5 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center price-card-requried mb-4">
-                        <h3 class="price-card-title">Exclusive</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">25</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">150 <span class="text-muted">Project</span></li>
-                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">5<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">15<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Pro</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">99</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">500 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">10<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy;
-                <script>document.write(new Date().getFullYear())</script> Created With <i
-                    class="ti-heart text-danger"></i> By <a href="#" target="_blank"><span
-                        class="text-danger">MateoB</span></a>
+                <script>document.write(new Date().getFullYear())</script> Created with <i
+                    class="ti-heart text-danger"></i> by
+                <span class="text-danger">MateoB</span>
             </p>
         </div>
     </footer>
 
-    <!-- core  -->
+    <!-- scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-    <!-- MateoB js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.16/dist/umd/i18next.min.js"></script>
     <script src="assets/js/mateob.js"></script>
-
-
+    <script src="assets/js/i18n.js"></script>
 </body>
 
 </html>

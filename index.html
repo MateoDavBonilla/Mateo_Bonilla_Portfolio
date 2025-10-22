@@ -7,16 +7,14 @@
     <meta name="description" content="Start your development with Mateo Bonilla.">
     <meta name="author" content="Devcrud">
     <title>NITE</title>
+
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + MateoB main styles -->
+
+    <!-- main styles -->
     <link rel="stylesheet" href="assets/css/mateob.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
-
-    <!-- modal -->
-    <link rel="stylesheet" href="assets/css/modal.css">
-    <link rel="stylesheet" href="assets/css/modalmensaje.css">
-
+    <link rel="stylesheet" href="assets/css/i18n.css">
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
 
 </head>
@@ -29,11 +27,13 @@
         </video>
         <div class="container">
             <div class="header-content">
-                <h1 class="header-title">NITE</h1>
-                <h6 class="header-mono">Front-End Developer/Designer | Game Developer | UX/UI Designer</h6>
+                <h1 class="header-title" data-i18n="header.title">NITE</h1>
+                <h6 class="header-mono" data-i18n="header.subtitle">Front-End Developer/Designer | Game Developer |
+                    UX/UI Designer</h6>
             </div>
         </div>
     </header>
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
@@ -41,18 +41,13 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a href="resume.html" class="nav-link">Resume</a>
-                    </li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link" data-i18n="nav.resume">Resume</a></li>
                 </ul>
+
                 <ul class="navbar-nav brand">
                     <img src="assets/imgs/nite.png" alt="" class="brand-img">
                     <li class="brand-txt">
@@ -60,81 +55,85 @@
                         <div class="brand-subtitle">Web Designer | Game Developer | Graphic Designer</div>
                     </li>
                 </ul>
+
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
+                    <li class="nav-item"><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="portafolio.html" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
+                    <li class="nav-item"><a href="portafolio.html" class="nav-link"
+                            data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li class="nav-item last-item"><a href="contact.html" class="nav-link"
+                            data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <div class="container-fluid">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
+                <h3 class="font-weight-light" data-i18n="about.who">Who am I?</h3>
                 <span class="line mb-5"></span>
-                <h5 class="mb-3">A Web Designer / Developer Located In Ecuador</h5>
-                <p class="mt-20">My main professional goal is to provide the best, highest-quality solution.</p>
-                <a class="btn btn-outline-danger" href="assets/cv/Mateo_Bonilla_CV_EN.pdf" download="MateoBonilaCV"><i
-                        class="icon-down-circled2 "></i>Download My CV</a>
+                <h5 class="mb-3" data-i18n="about.located">A Web Designer/Developer Located in Ecuador</h5>
+                <p class="mt-20" data-i18n="about.goal">My main professional goal is to provide the best,
+                    highest-quality solution.</p>
+                <a class="btn btn-outline-danger" href="assets/cv/CV_Mateo_Bonilla.pdf" data-i18n="about.download"
+                    download="MateoBonillaCV">Download My CV</a>
             </div>
+
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
+                <h3 class="font-weight-light" data-i18n="about.personal">Personal Info</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Email</span> <a href="mailto:mateobonilla95@outlook.com" target="_blank">:
-                            mateobonilla95@outlook.com</a></li>
-                    <li><span>Phone Number</span> <a href="https://wa.me/+593988432826" target="_blank">: + (593)
-                            988432826</a></li>
-                    <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/mateodbonillaerazo/" target="_blank">
-                            :
-                            www.linkedin.com/in/mateodbonillaerazo </a></li>
-                    <li><span>Behance</span><a href="https://www.behance.net/mateodavidbonilla" target="_blank"> :
-                            www.behance.net/mateodavidbonilla </a></li>
+                    <li><span>Email:</span> <a href="mailto:mateobonilla95@outlook.com"
+                            target="_blank">mateobonilla95@outlook.com</a></li>
+                    <li><span>Phone Number:</span> <a href="https://wa.me/593988432826" target="_blank">+593 988 432
+                            826</a></li>
+                    <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/mateodbonillaerazo/"
+                            target="_blank">www.linkedin.com/in/mateodbonillaerazo</a></li>
+                    <li><span>Behance:</span> <a href="https://www.behance.net/mateodavidbonilla"
+                            target="_blank">www.behance.net/mateodavidbonilla</a></li>
                 </ul>
+
                 <ul class="social-icons pt-3">
                     <li class="social-item"><a class="social-link" href="https://www.facebook.com/mateo.bonilla.562"
-                            target="_blank"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            target="_blank"><i class="ti-facebook"></i></a></li>
                     <li class="social-item"><a class="social-link" href="https://www.instagram.com/nite.mb/"
-                            target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            target="_blank"><i class="ti-instagram"></i></a></li>
                     <li class="social-item"><a class="social-link" href="https://github.com/MateoDavBonilla"
-                            target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                            target="_blank"><i class="ti-github"></i></a></li>
                     <li class="social-item"><a class="social-link"
                             href="https://www.linkedin.com/in/mateodbonillaerazo/" target="_blank"><i
-                                class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <!-- <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li> -->
+                                class="ti-linkedin"></i></a></li>
                 </ul>
             </div>
+
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Expertise</h3>
+                <h3 class="font-weight-light" data-i18n="about.expertise">My Expertise</h3>
                 <span class="line mb-5"></span>
+
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>UX Design</h6>
-                        <p class="subtitle"> Interaction, Simplicity, Intuitiveness .</p>
+                        <h6 data-i18n="about.ux">UX Design</h6>
+                        <p class="subtitle" data-i18n="about.uxsub">Interaction, Simplicity, Intuitiveness.</p>
                         <hr>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Web Development</h6>
-                        <p class="subtitle">Web Info, Web Apps, Mobile Apps.</p>
+                        <h6 data-i18n="about.web">Web Development</h6>
+                        <p class="subtitle" data-i18n="about.websub">Websites, Web Apps, Mobile Apps.</p>
                         <hr>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-game icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Game Development</h6>
-                        <p class="subtitle">Game Development, Level Design, Game Art.</p>
+                        <h6 data-i18n="about.game">Game Development</h6>
+                        <p class="subtitle" data-i18n="about.gamesub">Game Development, Level Design, Game Art.</p>
                         <hr>
                     </div>
                 </div>
@@ -142,14 +141,13 @@
         </div>
     </div>
 
-
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy;
                 <script>document.write(new Date().getFullYear())</script> Created With <i
-                    class="ti-heart text-danger"></i> By <a href="#" target="_blank"><span
-                        class="text-danger">MateoB</span></a>
+                    class="ti-heart text-danger"></i>
+                By <a href="#" target="_blank"><span class="text-danger">MateoB</span></a>
             </p>
         </div>
     </footer>
@@ -157,19 +155,15 @@
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <!-- Isotope  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.16/dist/umd/i18next.min.js"></script>
 
-    <!-- MateoB js -->
+    <!-- scripts -->
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/mateob.js"></script>
-
-
 </body>
 
 </html>
