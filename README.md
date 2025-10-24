@@ -9,7 +9,7 @@ This portfolio highlights my most relevant projects, including web applications,
 ## 🚀 Live Demo
 
 👉 **Visit the deployed portfolio here:**  
-🔗 [https://mateobonilla-portfolio.netlify.app](https://mateobonilla-portfolio.netlify.app)  
+🔗 [https://mateobonilla-portfolio.netlify.app](https://mateobonilla.netlify.app/) 
 
 
 ---
