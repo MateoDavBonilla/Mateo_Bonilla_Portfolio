@@ -4,22 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Mateo Bonilla.">
-    <meta name="author" content="Devcrud">
-    <title>MateoBonilla Portfolio</title>
+    <meta name="description" content="Fragment - Metroidvania project by Mateo Bonilla.">
+    <meta name="author" content="Mateo Bonilla">
+    <title data-i18n="fragment.title">Fragment | Mateo Bonilla</title>
+
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <!-- Bootstrap + MateoB main styles -->
     <link rel="stylesheet" href="assets/css/mateob.css">
     <link rel="stylesheet" href="assets/css/diseno.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/i18n.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
 
-    <!-- modal -->
-    <link rel="stylesheet" href="assets/css/modal.css">
-    <link rel="stylesheet" href="assets/css/modalmensaje.css">
 
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
-
 </head>
 
 <body>
@@ -28,62 +28,321 @@
 
         <!-- Página de portada -->
         <div class="page">
-            <div class="lookbook-title" style="background-color: black;"><img
-                    src="./assets/imgs/Fragment/Fragment_Portada.png" alt="fragment potraid"></div>
+            <div class="lookbook-title" style="background-color: black;">
+                <img src="./assets/imgs/Fragment/Fragment_Portada.png" alt="fragment cover">
+            </div>
         </div>
-        <p class="title">Fragment - MetroidVania</p>
+
+        <p class="title" data-i18n="fragment.projectTitle">Fragment - Metroidvania</p>
+<div class="page">
+
+</div>
         <section class="case-wrap">
             <!-- IZQUIERDA: tu “tabla” de labels/valores -->
             <dl class="meta-grid">
-                <dt>CATEGORY</dt>
+                <dt data-i18n="fragment.categoryTitle">CATEGORY</dt>
                 <dd>
                     <ul class="meta-list">
-                        <li>Game Development</li>
-                        <li>UX/UI Design</li>
-                        <li>Storytelling</li>
+                        <li data-i18n="fragment.category1">Game Development</li>
+                        <li data-i18n="fragment.category2">UX/UI Design</li>
+                        <li data-i18n="fragment.category3">Storytelling</li>
                     </ul>
                 </dd>
-                <dt>YEAR</dt>
+
+                <dt data-i18n="fragment.yearTitle">YEAR</dt>
                 <dd>2025</dd>
-                <dt>CLIENT</dt>
-                <dd>Indie Game</dd>
+
+                <dt data-i18n="fragment.clientTitle">CLIENT</dt>
+                <dd data-i18n="fragment.client">Indie Game</dd>
             </dl>
             <div class="case-desc">
-                <p>
+                <p data-i18n="fragment.description1">
                     Fragment is a metroidvania inspired by the theme of schizophrenia. You progress to uncover the story
                     while interacting with various characters who challenge your identity and reveal who you may truly
                     be.
-                </p>
-                <p>
-                    Tech & tools: Unity (3D development), C# (programming), Adobe Illustrator (illustrations), Adobe
-                    After Effects (cinematics).
                 </p>
                 <!-- <a class="view-link" href="https://activate-bi-d05e6.web.app/" target="_blank" rel="noopener">view the
                     website</a> -->
             </div>
         </section>
-        <div class="page">
-            <p class="subtitle">Promotional Video</p>
-            <div class="image-placeholder"><video autoplay loop muted playsinline class="video"
-                    src="./assets/imgs/Fragment/Video_Promocional.mp4"></video></div>
-            <div>
-                <p class="subtitle">Menu</p>
-                <div class="image-placeholder"><img src="./assets/imgs/Fragment/menu.png" alt="menu image"></img></div>
-            </div>
-            <div>
-                <p class="subtitle">Pause Menu</p>
-                <div class="image-placeholder"><img src="./assets/imgs/Fragment/pause.png" alt="pause image"></img>
-                </div>
-            </div>
-            <div>
-                <p class="subtitle">Game Over Menu</p>
-                <div class="image-placeholder"><img src="./assets/imgs/Fragment/gameover.png"
-                        alt="game over image"></img>
-                </div>
+        <div>
+            <section class="case-wrap">
+                <!-- IZQUIERDA: tu “tabla” de labels/valores -->
+                <dl class="meta-grid">
+                    <dt data-i18n="fragment.description2">Tech & Tools</dt>
+
+            </section>
+            <div class="tools-icons">
+                <i class="devicon-unity-plain" title="Unity"></i>
+                <i class="devicon-csharp-plain colored" title="C#"></i>
+                <i class="devicon-illustrator-plain colored" title="Adobe Illustrator"></i>
+                <i class="devicon-aftereffects-plain colored" title="Adobe After Effects"></i>
             </div>
         </div>
-    </div>
+        <p class="title" data-i18n="fragment.video">Promotional Video</p>
+        <div class="page">
+            <div class="image-placeholder">
+                <video autoplay loop muted playsinline class="video"
+                    src="./assets/imgs/Fragment/Video_Promocional.mp4"></video>
+            </div>
+        </div>
 
+        <p class="title" data-i18n="fragment.objectivesTitle">Objetivos del proyecto</p>
+
+        <section class="objectives-section">
+            <div class="objectives-container">
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="fragment.objective1.title">Proposal</h3>
+                    <ul>
+                        <li data-i18n="fragment.objective1.item1">Raise awareness about a taboo illness.</li>
+                        <li data-i18n="fragment.objective1.item2">Develop a project that brings visibility to the
+                            condition.</li>
+                        <li data-i18n="fragment.objective1.item3">Promote understanding that in some cases, people can
+                            live a normal life.</li>
+                    </ul>
+                </div>
+
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="fragment.objective2.title">Research</h3>
+                    <ul>
+                        <li data-i18n="fragment.objective2.item1">Identify knowledge barriers about the illness.</li>
+                        <li data-i18n="fragment.objective2.item2">Understand the level of awareness in specific cases.
+                        </li>
+                        <li data-i18n="fragment.objective2.item3">Explore how much people know about mental health
+                            conditions.</li>
+                    </ul>
+                </div>
+
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="fragment.objective3.title">Product</h3>
+                    <ul>
+                        <li data-i18n="fragment.objective3.item1">Design a video game that raises awareness about mental
+                            health disorders.</li>
+                        <li data-i18n="fragment.objective3.item2">Create gameplay focused on the illness as the main
+                            character.</li>
+                        <li data-i18n="fragment.objective3.item3">Combine awareness, visibility, and entertainment in a
+                            single product.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <p class="title" data-i18n="fragment.designProcessTitle">Design Process</p>
+
+        <div class="page">
+            <section class="research-section">
+                <p class="subtitle" data-i18n="fragment.researchTitle">Research</p>
+
+                <div class="research-content">
+                    <div class="research-text">
+                        <h4 class="research-subtitle" data-i18n="fragment.keyFindingsTitle">Key Findings</h4>
+                        <ul class="research-list">
+                            <li data-i18n="fragment.keyFinding1">Lack of information about mental health disorders.</li>
+                            <li data-i18n="fragment.keyFinding2">Social stigma or rejection towards people with mental
+                                health issues.</li>
+                            <li data-i18n="fragment.keyFinding3">Limited understanding and empathy toward these
+                                conditions.</li>
+                        </ul>
+
+                        <h4 class="research-subtitle" data-i18n="fragment.methodologyTitle">Methodology</h4>
+                        <p class="research-method" data-i18n="fragment.methodology">VIEDU</p>
+                    </div>
+
+                    <div class="research-stats">
+                        <div class="stat-card">
+                            <h3>85+</h3>
+                            <p data-i18n="fragment.stat1">Responses in quantitative survey</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>10</h3>
+                            <p data-i18n="fragment.stat2">Interviews with real users</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p data-i18n="fragment.stat3">Users who tested the demo</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="research-section">
+                <p class="subtitle" data-i18n="fragment.definitionTitle">Definition</p>
+
+                <div class="research-content">
+                    <div class="research-text">
+                        <h4 class="research-subtitle" data-i18n="fragment.projectTitle2">The Project</h4>
+                        <ul class="research-list">
+                            <li data-i18n="fragment.projectItem1">
+                                It has a 2D narrative focus, where the player takes the role of a protagonist with
+                                schizophrenia.
+                            </li>
+                            <li data-i18n="fragment.projectItem2">
+                                The main objective is to distinguish what is truly real.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="research-section">
+                <p class="subtitle" data-i18n="fragment.ideationTitle">Ideation</p>
+
+                <div class="research-content">
+                    <div class="research-text">
+                        <h4 class="research-subtitle" data-i18n="fragment.storyTitle">Theme and Story</h4>
+                        <ul class="research-list">
+                            <li data-i18n="fragment.storyItem1">
+                                The main theme is the internal acceptance of schizophrenia and the search for mental
+                                balance.
+                            </li>
+                            <li data-i18n="fragment.storyItem2">
+                                The world represents how the main character perceives reality.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <br>
+
+            <section class="research-section">
+                <p class="title" data-i18n="fragment.designTitle">Design</p>
+                <br>
+                <div class="research-content">
+                    <div class="research-text">
+                        <ul class="research-list">
+                            <li data-i18n="fragment.designItem1">
+                                In the design phase, I translated the defined concepts into visual and functional
+                                solutions through wireframes and an interactive prototype.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="page">
+                <div>
+                    <p class="subtitle" data-i18n="fragment.sketchTitle">Sketch</p>
+                    <div class="research-content">
+                        <div class="research-text">
+                            <ul class="research-list">
+                                <li data-i18n="fragment.sketchDescription">
+                                    Level design sketch showing structure and possible interactive elements.
+                                </li>
+                            </ul>
+                            <div class="image-placeholder">
+                                <img src="./assets/imgs/Fragment/boceto.png" alt="level design sketch">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="subtitle" data-i18n="fragment.prototypeTitle">Prototype</p>
+                    <div class="image-placeholder">
+                        <video autoplay loop muted playsinline class="video"
+                            src="./assets/imgs/Fragment/prototipo.webm"></video>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="subtitle" data-i18n="fragment.menu">Menu</p>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fragment/menu.png" alt="menu image"></div>
+                </div>
+
+                <div>
+                    <p class="subtitle" data-i18n="fragment.pause">Pause Menu</p>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fragment/pause.png" alt="pause image"></div>
+                </div>
+
+                <div>
+                    <p class="subtitle" data-i18n="fragment.gameover">Game Over Menu</p>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fragment/gameover.png" alt="game over image">
+                    </div>
+                </div>
+            </div>
+
+            <section class="research-section">
+                <p class="subtitle" data-i18n="fragment.resultsTitle">Results</p>
+
+                <div class="research-content">
+                    <div class="objective-card">
+                        <h4 class="research-subtitle" data-i18n="fragment.resultsDescription">
+                            A digital experience that allows anyone to become aware of these types of mental health
+                            conditions, learn,
+                            explore, and engage without intimidation. The game integrates mechanics, gradual education,
+                            and visibility to
+                            present these topics in an accessible, engaging, and entertaining way.
+                        </h4>
+                        <ul>
+                            <li data-i18n="fragment.resultItem1">
+                                Complete demo of the first level of the game, including gameplay, interaction, and
+                                story.
+                            </li>
+                            <li data-i18n="fragment.resultItem2">
+                                Integrated narrative within secondary NPC characters.
+                            </li>
+                            <li data-i18n="fragment.resultItem3">
+                                Real mechanics inspired by actual mental health conditions.
+                            </li>
+                        </ul>
+                        <div class="image-placeholder">
+                            <video autoplay loop muted playsinline class="video"
+                                src="./assets/imgs/Fragment/Game-1.m4v"></video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="objectives-section">
+                <div class="objectives-container">
+                    <div class="objective-card">
+                        <h3 class="objective-category" data-i18n="fragment.challengesTitle">Challenges and Learnings
+                        </h3>
+                        <p class="research-subtitle" data-i18n="fragment.challengesDescription"
+                            style="font-size: 16px;">
+                            This project was both rewarding and challenging. Throughout the process, it was fulfilling
+                            to see how an initial
+                            idea gradually took shape and evolved with each iteration. Observing how research, design,
+                            and development came
+                            together to create a real solution helped me strengthen my skills, apply empathy and
+                            resilience, and trust in
+                            the creative process.
+                        </p>
+                        <ul>
+                            <li data-i18n="fragment.challengeItem1">
+                                Working with mental health topics, although complex, can lead to interesting design
+                                ideas.
+                            </li>
+                            <li data-i18n="fragment.challengeItem2">
+                                Implementing mental conditions into gameplay mechanics was challenging but very
+                                enjoyable.
+                            </li>
+                            <li data-i18n="fragment.challengeItem3">
+                                I learned how to translate concepts and designs into functional code.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="objective-card">
+                        <h3 class="objective-category" data-i18n="fragment.nextStepsTitle">Next Steps</h3>
+                        <ul>
+                            <li data-i18n="fragment.nextStep1">
+                                Develop a full game exploring these topics in more depth.
+                            </li>
+                            <li data-i18n="fragment.nextStep2">
+                                Release the game on platforms such as Steam or Play Store.
+                            </li>
+                            <li data-i18n="fragment.nextStep3">
+                                Build a community to increase awareness and visibility of projects like this.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
@@ -103,9 +362,7 @@
     </a>
 
     <a class="projects" href="portafolio.html">
-        <div class="btn btn-outline-danger">
-            Projects
-        </div>
+        <div class="btn btn-outline-danger" data-i18n="fragment.projects">Projects</div>
     </a>
 
     <!-- core  -->
@@ -118,12 +375,12 @@
         crossorigin="anonymous"></script>
     <!-- Isotope  -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.16/dist/umd/i18next.min.js"></script>
 
     <!-- MateoB js -->
     <script src="assets/js/mateob.js"></script>
-
-
+    <script src="assets/js/i18n.js"></script>
 </body>
 
 </html>

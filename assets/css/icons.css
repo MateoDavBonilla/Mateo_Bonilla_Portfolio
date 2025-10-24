@@ -1,0 +1,20 @@
+.tools-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+  
+}
+
+.tools-icons i {
+  font-size: 50px;
+  transition: transform 0.2s ease;
+}
+
+.tools-icons i:hover {
+  transform: scale(1.2);
+}
