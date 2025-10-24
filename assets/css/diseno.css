@@ -139,7 +139,7 @@ body {
   content: "✔";
   position: absolute;
   left: 0;
-  color: #140255;
+  color: #2800b9;
   font-weight: bold;
 }
 
@@ -307,6 +307,7 @@ body {
   /* siempre en col 2 */
   font-size: 1.2rem;
   line-height: 1.55;
+  margin-right: 1.5rem;
 }
 
 /* valores con varias líneas (lista dentro del dd) */
@@ -458,6 +459,61 @@ body {
   cursor: pointer;
   font-size: 24px;
   transition: background 0.3s ease;
+}
+
+/* figma */
+
+.figma-embed-container {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  padding-bottom: 100%;
+  /* Mantiene proporción 16:9 */
+  overflow: hidden;
+  border-radius: 12px;
+  /* Opcional: bordes redondeados */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.figma-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Estilo para embeber prototipos Figma con la misma estética que videos o imágenes */
+.image-placeholder.figma-embed {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  /* mismo ancho que tus mockups */
+  margin: 0 auto 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background: #000;
+  /* fondo oscuro de relleno */
+}
+
+/* Ajuste de relación 16:9 adaptable */
+.image-placeholder.figma-embed::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+  /* relación 16:9 */
+}
+
+.image-placeholder.figma-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
 }
 
 @keyframes rain {
