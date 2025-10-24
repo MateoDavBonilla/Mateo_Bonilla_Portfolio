@@ -10,7 +10,7 @@ This portfolio highlights my most relevant projects, including web applications,
 
 👉 **Visit the deployed portfolio here:**  
 🔗 [https://mateobonilla-portfolio.netlify.app](https://mateobonilla-portfolio.netlify.app)  
-*(Replace this link with your actual deployed site — Netlify, Vercel, or GitHub Pages)*
+
 
 ---
 
@@ -50,5 +50,4 @@ The project uses **modern front-end technologies** and design principles:
 
 ---
 
-## 📂 Project Structure
 
