@@ -4,106 +4,309 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Mateo Bonilla.">
-    <meta name="author" content="Devcrud">
-    <title>MateoBonilla Portfolio</title>
+    <meta name="description" content="Dragon Trade Off (DTO) e-commerce project by Mateo Bonilla.">
+    <meta name="author" content="Mateo Bonilla">
+    <title data-i18n="dto.title">DTO | Mateo Bonilla</title>
+
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + MateoB main styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Main Styles -->
     <link rel="stylesheet" href="assets/css/mateob.css">
     <link rel="stylesheet" href="assets/css/diseno.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
-
-    <!-- modal -->
-    <link rel="stylesheet" href="assets/css/modal.css">
-    <link rel="stylesheet" href="assets/css/modalmensaje.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/i18n.css">
 
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
-
 </head>
 
 <body>
+
     <div class="lookbook">
 
-        <!-- Página de portada -->
+        <!-- COVER PAGE -->
         <div class="page">
             <div class="lookbook-title" style="background-color: rgb(202, 9, 9);">Dragon Trade Off</div>
         </div>
-        <p class="title">DTO</p>
+
+        <p class="title" data-i18n="dto.projectTitle">Dragon Trade Off (DTO)</p>
+
         <section class="case-wrap">
-            <!-- IZQUIERDA: tu “tabla” de labels/valores -->
             <dl class="meta-grid">
-                <dt>CATEGORY</dt>
+                <dt data-i18n="dto.categoryTitle">CATEGORY</dt>
                 <dd>
                     <ul class="meta-list">
-                        <li>Web Development</li>
-                        <li>e-commerce</li>
-                        <li>UX/UI Design</li>
+                        <li data-i18n="dto.category1">Web Development</li>
+                        <li data-i18n="dto.category2">E-commerce</li>
+                        <li data-i18n="dto.category3">UX/UI Design</li>
                     </ul>
                 </dd>
-                <dt>YEAR</dt>
+
+                <dt data-i18n="dto.yearTitle">YEAR</dt>
                 <dd>2023</dd>
+
+                <dt data-i18n="dto.clientTitle">CLIENT</dt>
+                <dd data-i18n="dto.client">University Project</dd>
             </dl>
+
             <div class="case-desc">
-                <p>
-                    Dragon Traid Of (DTO) is an e-commerce platform for students to showcase and manage their ventures.
-                    It
-                    provides easy access for interested buyers and supports buying and selling online, with digital or
-                    in-person payments.
+                <p data-i18n="dto.description1">
+                    Dragon Trade Off (DTO) is an e-commerce platform created for university students to showcase,
+                    promote,
+                    and manage their ventures. It allows easy access for buyers and supports both digital and in-person
+                    transactions.
                 </p>
-                <p>
-                    Tech stack: React, TypeScript/JavaScript, HTML5, CSS, MongoDB; hosted on Heroku.
+                <p data-i18n="dto.description2">
+                    Tech stack: React, TypeScript/JavaScript, HTML5, CSS, MongoDB; deployed on Heroku.
                 </p>
             </div>
         </section>
+
+        <!-- TOOLS -->
+        <section class="subtitle">
+            <dt data-i18n="dto.toolsTitle">Tech & Tools</dt>
+        </section>
+        <div class="tools-icons">
+            <i class="devicon-react-original colored" title="React"></i>
+            <i class="devicon-typescript-plain colored" title="TypeScript"></i>
+            <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+            <i class="devicon-html5-plain colored" title="HTML5"></i>
+            <i class="devicon-css3-plain colored" title="CSS3"></i>
+            <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
+            <i class="devicon-heroku-original colored" title="Heroku"></i>
+        </div>
+
+        <!-- PROJECT OBJECTIVES -->
+        <p class="title" data-i18n="dto.objectivesTitle">Project Objectives</p>
+
+        <section class="objectives-section">
+            <div class="objectives-container">
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="dto.objective1.title">Purpose</h3>
+                    <ul>
+                        <li data-i18n="dto.objective1.item1">Create an accessible marketplace for student ventures.</li>
+                        <li data-i18n="dto.objective1.item2">Encourage entrepreneurship and collaboration among
+                            students.</li>
+                        <li data-i18n="dto.objective1.item3">Promote local innovation through an educational platform.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="dto.objective2.title">Research</h3>
+                    <ul>
+                        <li data-i18n="dto.objective2.item1">Identify pain points in promoting student-run businesses.
+                        </li>
+                        <li data-i18n="dto.objective2.item2">Study usability patterns for simple and secure
+                            transactions.</li>
+                        <li data-i18n="dto.objective2.item3">Analyze visual hierarchy and trust factors in e-commerce
+                            interfaces.</li>
+                    </ul>
+                </div>
+
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="dto.objective3.title">Impact</h3>
+                    <ul>
+                        <li data-i18n="dto.objective3.item1">Facilitate economic activity and visibility among students.
+                        </li>
+                        <li data-i18n="dto.objective3.item2">Empower student entrepreneurs through digital presence.
+                        </li>
+                        <li data-i18n="dto.objective3.item3">Provide real-world experience in managing online sales.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESIGN PROCESS -->
+        <p class="title" data-i18n="dto.designProcessTitle">Design Process</p>
+
         <div class="page">
-            <p class="subtitle">Web e-commerce app</p>
-            <div class="image-placeholder"><video autoplay loop muted playsinline class="video"
-                    src="./assets/imgs/DTO/dto.m4v"></video></div>
-            <div>
-                <p class="subtitle">Home Page</p>
-                <div>
-                    <img class="image-placeholder" src="./assets/imgs/DTO/DTO1.png" alt="home page image">
+            <section class="research-section">
+                <p class="subtitle" data-i18n="dto.researchTitle">Research</p>
+                <div class="research-content">
+                    <div class="research-text">
+                        <h4 class="research-subtitle" data-i18n="dto.keyFindingsTitle">Key Findings</h4>
+                        <ul class="research-list">
+                            <li data-i18n="dto.keyFinding1">Students needed an easy way to showcase products online.
+                            </li>
+                            <li data-i18n="dto.keyFinding2">Payment and communication options had to be flexible.</li>
+                            <li data-i18n="dto.keyFinding3">Trust and usability were critical for engagement.</li>
+                        </ul>
+
+                        <h4 class="research-subtitle" data-i18n="dto.methodologyTitle">Methodology</h4>
+                        <p class="research-method" data-i18n="dto.methodology">Surveys, Competitive Analysis &
+                            Prototyping</p>
+                    </div>
+
+                    <div class="research-stats">
+                        <div class="stat-card">
+                            <h3>25+</h3>
+                            <p data-i18n="dto.stat1">Student responses</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p data-i18n="dto.stat2">Test users for usability validation</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>8</h3>
+                            <p data-i18n="dto.stat3">Iterations before final launch</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="research-section">
+                <p class="subtitle" data-i18n="dto.definitionTitle">Definition</p>
+                <div class="research-content">
+                    <div class="research-text">
+                        <h4 class="research-subtitle" data-i18n="dto.projectConceptTitle">The Project</h4>
+                        <ul class="research-list">
+                            <li data-i18n="dto.projectConceptItem1">E-commerce web app built for student entrepreneurs.
+                            </li>
+                            <li data-i18n="dto.projectConceptItem2">Provides direct communication between buyers and
+                                sellers.</li>
+                            <li data-i18n="dto.projectConceptItem3">Features a responsive interface with category-based
+                                filtering.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="research-section">
+                <p class="subtitle" data-i18n="dto.ideationTitle">Ideation</p>
+                <div class="research-content">
+                    <div class="research-text">
+                        <h4 class="research-subtitle" data-i18n="dto.storyTitle">User Experience & Flow</h4>
+                        <ul class="research-list">
+                            <li data-i18n="dto.storyItem1">Designed simple navigation emphasizing discoverability.</li>
+                            <li data-i18n="dto.storyItem2">Created a visual hierarchy highlighting user products.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="research-section">
+            <p class="title" data-i18n="fragment.designTitle">Design</p>
+            <br>
+            <div class="research-content">
+                <div class="research-text">
+                    <ul class="research-list">
+                        <li data-i18n="fragment.designItem1">
+                            In the design phase, I translated the defined concepts into visual and functional
+                            solutions through wireframes and an interactive prototype.
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div>
-                <p class="subtitle">Login Page</p>
-                <div>
-                    <img class="image-placeholder" src="./assets/imgs/DTO/DTO2.png" alt="login page image">
-                </div>
+        </section>
+
+
+        <div class="page">
+            <p class="subtitle">Wireframe</p>
+            <div class="image-placeholder figma-embed">
+                <iframe src="https://embed.figma.com/design/WFW1qfyavwYh4phYHw9Bwv/DTO?node-id=0-1&embed-host=share"
+                    allowfullscreen></iframe>
             </div>
-            <div>
-                <p class="subtitle">About Us Page</p>
+
+            <div class="page">
                 <div>
-                    <img class="image-placeholder" src="./assets/imgs/DTO/DTO3.png" alt="login page image">
+                    <p class="subtitle">Home Page</p>
+                    <div>
+                        <img class="image-placeholder" src="./assets/imgs/DTO/DTO1.png" alt="home page image">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p class="subtitle">Commerce Page</p>
                 <div>
-                    <img class="image-placeholder" src="./assets/imgs/DTO/DTO5.png" alt="login page image">
+                    <p class="subtitle">Login Page</p>
+                    <div>
+                        <img class="image-placeholder" src="./assets/imgs/DTO/DTO2.png" alt="login page image">
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p class="subtitle">Form Page</p>
                 <div>
-                    <img class="image-placeholder" src="./assets/imgs/DTO/DTO4.png" alt="login page image">
+                    <p class="subtitle">About Us Page</p>
+                    <div>
+                        <img class="image-placeholder" src="./assets/imgs/DTO/DTO3.png" alt="login page image">
+                    </div>
+                </div>
+                <div>
+                    <p class="subtitle">Commerce Page</p>
+                    <div>
+                        <img class="image-placeholder" src="./assets/imgs/DTO/DTO5.png" alt="login page image">
+                    </div>
+                </div>
+                <div>
+                    <p class="subtitle">Form Page</p>
+                    <div>
+                        <img class="image-placeholder" src="./assets/imgs/DTO/DTO4.png" alt="login page image">
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- RESULTS -->
+        <section class="research-section">
+            <p class="subtitle" data-i18n="dto.resultsTitle">Results</p>
+            <div class="research-content">
+                <div class="objective-card">
+                    <h4 class="research-subtitle" data-i18n="dto.resultsDescription">
+                        DTO successfully connected students and local buyers through an intuitive digital platform,
+                        empowering them to manage their businesses independently.
+                    </h4>
+                    <ul>
+                        <li data-i18n="dto.resultItem1">Functional online marketplace prototype.</li>
+                        <li data-i18n="dto.resultItem2">Integration with MongoDB for user and product management.</li>
+                        <li data-i18n="dto.resultItem3">Improved usability and trust metrics based on feedback.</li>
+                    </ul>
+                    <div class="image-placeholder">
+                        <video autoplay loop muted playsinline class="video" src="./assets/imgs/DTO/dto.m4v"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHALLENGES AND LEARNINGS -->
+        <section class="objectives-section">
+            <div class="objectives-container">
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="dto.challengesTitle">Challenges and Learnings</h3>
+                    <p class="research-subtitle" data-i18n="dto.challengesDescription" style="font-size: 16px;">
+                        Creating an e-commerce platform from scratch required balancing UI design, backend connections,
+                        and responsive functionality. The project strengthened my skills in database integration, UX
+                        validation, and iterative design.
+                    </p>
+                    <ul>
+                        <li data-i18n="dto.challengeItem1">Designing a modern and intuitive product display layout.</li>
+                        <li data-i18n="dto.challengeItem2">Ensuring responsiveness across devices and browsers.</li>
+                        <li data-i18n="dto.challengeItem3">Managing dynamic data from MongoDB effectively.</li>
+                    </ul>
+                </div>
+
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="dto.nextStepsTitle">Next Steps</h3>
+                    <ul>
+                        <li data-i18n="dto.nextStep1">Add integrated payment gateways (PayPal, Stripe).</li>
+                        <li data-i18n="dto.nextStep2">Implement secure authentication and user dashboards.</li>
+                        <li data-i18n="dto.nextStep3">Deploy a production-ready version with full backend support.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <br>
     </div>
 
+    <!-- FOOTER -->
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy;
                 <script>document.write(new Date().getFullYear())</script> Created With <i
-                    class="ti-heart text-danger"></i>
-                By <a href="#" target="_blank"><span class="text-danger">MateoB</span></a>
+                    class="ti-heart text-danger"></i> By
+                <a href="#" target="_blank"><span class="text-danger">MateoB</span></a>
             </p>
         </div>
     </footer>
 
+    <!-- NAVIGATION -->
     <a class="flecha-flotante" href='survival-m.html'>
         <i class="ti-angle-double-left"></i>
     </a>
@@ -111,27 +314,19 @@
         <i class="ti-angle-double-right"></i>
     </a>
     <a class="projects" href="portafolio.html">
-        <div class="btn btn-outline-danger">
-            Projects
-        </div>
+        <div class="btn btn-outline-danger" data-i18n="dto.projects">Projects</div>
     </a>
 
-    <!-- core  -->
+    <!-- JS -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-    <!-- Isotope  -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-
-    <!-- MateoB js -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.16/dist/umd/i18next.min.js"></script>
     <script src="assets/js/mateob.js"></script>
-
-
+    <script src="assets/js/i18n.js"></script>
 </body>
 
 </html>

@@ -4,82 +4,173 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Mateo Bonilla.">
-    <meta name="author" content="Devcrud">
-    <title>MateoBonilla Portfolio</title>
+    <meta name="description" content="What Remains After Love? - Photography project by Mateo Bonilla.">
+    <meta name="author" content="Mateo Bonilla">
+    <title data-i18n="foto.title">What Remains After Love? | Mateo Bonilla</title>
+
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + MateoB main styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- styles -->
     <link rel="stylesheet" href="assets/css/mateob.css">
     <link rel="stylesheet" href="assets/css/diseno.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
-
-    <!-- modal -->
-    <link rel="stylesheet" href="assets/css/modal.css">
-
+    <link rel="stylesheet" href="assets/css/i18n.css">
     <link rel="icon" type="image/png" href="./assets/imgs/nite.png">
-
 </head>
 
 <body>
     <div class="lookbook">
-        <!-- Página de portada -->
+
+        <!-- COVER -->
         <div class="page">
-            <div class="lookbook-title" style="background-color: black;">
+            <div class="lookbook-title" style="background-color: black;" data-i18n="foto.coverTitle">
                 What remains after love?
             </div>
         </div>
+        <p class="title" data-i18n="foto.projectTitle">What Remains After Love?</p>
 
-        <p class="title">What Remains After Love?</p>
         <section class="case-wrap">
-            <!-- IZQUIERDA: tu “tabla” de labels/valores -->
             <dl class="meta-grid">
-                <dt>CATEGORY</dt>
+                <dt data-i18n="foto.categoryTitle">CATEGORY</dt>
                 <dd>
                     <ul class="meta-list">
-                        <li>Photography</li>
-                        <li>Black and White</li>
+                        <li data-i18n="foto.category1">Photography</li>
+                        <li data-i18n="foto.category2">Black and White</li>
+                        <li data-i18n="foto.category3">Self-Portrait</li>
                     </ul>
                 </dd>
-                <dt>YEAR</dt>
+
+                <dt data-i18n="foto.yearTitle">YEAR</dt>
                 <dd>2023</dd>
             </dl>
+
             <div class="case-desc">
-                <p>
-                    Self-portrait photography project that conveys the emotional journey after a major loss, exploring
-                    vulnerability, grief, and personal resilience.
+                <p data-i18n="foto.description1">
+                    Conceptual self-portrait project that explores the emotional landscape after love and loss.
+                    Through monochromatic imagery, it seeks to express fragility, resilience, and the quiet strength
+                    found in vulnerability.
                 </p>
-                <p>
-                    Tools & process: Canon EOS Rebel T7 camera; editing and post-production in Adobe Photoshop.
+                <p data-i18n="foto.description2">
+                    Tools: Canon EOS Rebel T7; Adobe Photoshop for post-production and tonal editing.
                 </p>
             </div>
         </section>
-        <div class="page">
-            <p class="subtitle">Gallery</p>
-            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/1.jpg" alt="First Image"></div>
 
-            <div class="image-placeholder large">
+        <!-- OBJECTIVES -->
+        <p class="title" data-i18n="foto.objectivesTitle">Project Objectives</p>
+        <section class="objectives-section">
+            <div class="objectives-container">
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="foto.objective1.title">Concept</h3>
+                    <ul>
+                        <li data-i18n="foto.objective1.item1">Capture the emotional state after loss through
+                            photography.</li>
+                        <li data-i18n="foto.objective1.item2">Use light and shadow to symbolize emotional duality.</li>
+                        <li data-i18n="foto.objective1.item3">Explore introspection and transformation through
+                            self-portraiture.</li>
+                    </ul>
+                </div>
 
-                <div class="image-placeholder"><img src="./assets/imgs/Fotografias/2.jpg" alt=""></video></div>
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="foto.objective2.title">Aesthetics</h3>
+                    <ul>
+                        <li data-i18n="foto.objective2.item1">Use black and white photography to strip away distraction
+                            and focus on emotion.</li>
+                        <li data-i18n="foto.objective2.item2">Compose each image to evoke balance between absence and
+                            presence.</li>
+                        <li data-i18n="foto.objective2.item3">Integrate symbolism and minimalism in each frame.</li>
+                    </ul>
+                </div>
+
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="foto.objective3.title">Narrative</h3>
+                    <ul>
+                        <li data-i18n="foto.objective3.item1">Translate grief and self-reflection into visual
+                            storytelling.</li>
+                        <li data-i18n="foto.objective3.item2">Emphasize texture and silence as emotional elements.</li>
+                        <li data-i18n="foto.objective3.item3">Invite viewers to find personal meaning in each
+                            composition.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/3.jpg" alt=""></video></div>
+        </section>
 
-            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/4.jpg" alt=""></video></div>
-
-            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/5.jpg" alt=""></video></div>
-
-            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/6.jpg" alt=""></video></div>
-
-            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/7.jpg" alt=""></video></div>
-            <div class="image-placeholder"><img src="./assets/imgs/Fotografias/8.jpg" alt=""></video></div>
-            <div class="image-placeholder large">
-                <div><img src="./assets/imgs/Fotografias/9.jpg" alt=""></video></div>
+        <!-- DESIGN PROCESS -->
+        <p class="title" data-i18n="foto.designProcessTitle">Creative Process</p>
+        <section class="research-section">
+            <p class="subtitle" data-i18n="foto.researchTitle">Research & Planning</p>
+            <div class="research-content">
+                <div class="research-text">
+                    <h4 class="research-subtitle" data-i18n="foto.keyFindingsTitle">Conceptual Insights</h4>
+                    <ul class="research-list">
+                        <li data-i18n="foto.keyFinding1">Photography as a medium can document emotion as well as
+                            reality.</li>
+                        <li data-i18n="foto.keyFinding2">Contrast and composition can express what words cannot.</li>
+                        <li data-i18n="foto.keyFinding3">Silence and emptiness can carry emotional weight as strong as
+                            action.</li>
+                    </ul>
+                </div>
             </div>
+        </section>
 
-        </div>
+        <!-- RESULTS -->
+        <section class="research-section">
+            <p class="subtitle" data-i18n="foto.resultsTitle">Gallery</p>
+            <div class="research-content">
+                <div class="objective-card">
+                    <h4 class="research-subtitle" data-i18n="foto.resultsDescription">
+                        A visual essay told through self-portraits that capture emotional aftermath — the tension
+                        between memory and release.
+                        Each image reflects an attempt to understand what remains once love fades.
+                    </h4>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fotografias/1.jpg" alt="photo 1"></div>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fotografias/2.jpg" alt="photo 2"></div>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fotografias/3.jpg" alt="photo 3"></div>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fotografias/4.jpg" alt="photo 4"></div>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fotografias/5.jpg" alt="photo 5"></div>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fotografias/6.jpg" alt="photo 6"></div>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fotografias/7.jpg" alt="photo 7"></div>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fotografias/8.jpg" alt="photo 8"></div>
+                    <div class="image-placeholder"><img src="./assets/imgs/Fotografias/9.jpg" alt="photo 9"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHALLENGES -->
+        <section class="objectives-section">
+            <div class="objectives-container">
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="foto.challengesTitle">Challenges and Learnings</h3>
+                    <p class="research-subtitle" data-i18n="foto.challengesDescription" style="font-size: 16px;">
+                        The process was deeply personal. Working with self-portraiture demanded emotional openness and
+                        technical precision.
+                        The challenge was to maintain authenticity while shaping a coherent visual narrative.
+                    </p>
+                    <ul>
+                        <li data-i18n="foto.challengeItem1">Balancing emotional vulnerability with artistic control.
+                        </li>
+                        <li data-i18n="foto.challengeItem2">Capturing natural light transitions in indoor settings.</li>
+                        <li data-i18n="foto.challengeItem3">Creating rhythm across multiple compositions.</li>
+                    </ul>
+                </div>
+
+                <div class="objective-card">
+                    <h3 class="objective-category" data-i18n="foto.nextStepsTitle">Next Steps</h3>
+                    <ul>
+                        <li data-i18n="foto.nextStep1">Expand the project into a printed photography series.</li>
+                        <li data-i18n="foto.nextStep2">Experiment with analog photography and natural grain textures.
+                        </li>
+                        <li data-i18n="foto.nextStep3">Explore collective exhibitions on emotional identity and
+                            self-perception.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <br>
     </div>
 
-
+    <!-- FOOTER -->
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
@@ -91,34 +182,19 @@
         </div>
     </footer>
 
-    <a class="flecha-flotante" href='dlc.html'>
-        <i class="ti-angle-double-left"></i>
-    </a>
-    <a class="flecha-flotante-right" href='alpina.html'>
-        <i class="ti-angle-double-right"></i>
-    </a>
+    <a class="flecha-flotante" href="dlc.html"><i class="ti-angle-double-left"></i></a>
+    <a class="flecha-flotante-right" href="alpina.html"><i class="ti-angle-double-right"></i></a>
+
     <a class="projects" href="portafolio.html">
-        <div class="btn btn-outline-danger">
-            Projects
-        </div>
+        <div class="btn btn-outline-danger" data-i18n="foto.projects">Projects</div>
     </a>
 
-    <!-- core  -->
+    <!-- core -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-
-    <!-- MateoB js -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.16/dist/umd/i18next.min.js"></script>
     <script src="assets/js/mateob.js"></script>
-
-
+    <script src="assets/js/i18n.js"></script>
 </body>
 
 </html>
