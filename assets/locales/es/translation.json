@@ -252,7 +252,7 @@
         "projects": "Proyectos"
     },
     "dlc": {
-                "title": "DLC | Mateo Bonilla",
+        "title": "DLC | Mateo Bonilla",
         "projectTitle": "Dragon Learning Center (DLC)",
         "categoryTitle": "CATEGORÍA",
         "category1": "Desarrollo de Aplicaciones",
@@ -681,5 +681,72 @@
         "nextStep2": "Experimentar con fotografía análoga y texturas de grano natural.",
         "nextStep3": "Explorar exhibiciones colectivas sobre identidad emocional y autopercepción.",
         "projects": "Proyectos"
+    },
+    "turismo": {
+        "title": "Reservas de Tours – UX/UI",
+        "meta": {
+            "categoryTitle": "CATEGORÍA",
+            "yearTitle": "AÑO",
+            "clientTitle": "CLIENTE",
+            "category1": "UX/UI Design",
+            "category2": "E-commerce",
+            "category3": "Product Design",
+            "client": "Proyecto Conceptual"
+        },
+        "description1": "Una experiencia completa para reservar tours en Ecuador. Incluye página principal, catálogo de tours, página de detalle (PDP) y flujo de reserva optimizado para conversión (CRO).",
+        "toolsTitle": "Tecnologías y Herramientas",
+        "objectiveTitle": "Objetivos del proyecto",
+        "objective1": {
+            "title": "Producto",
+            "item1": "Crear una experiencia completa de reservas de tours.",
+            "item2": "Desarrollar Landing, Catálogo, PDP y Flujo de Reserva.",
+            "item3": "Construir un sistema visual moderno y confiable."
+        },
+        "objective2": {
+            "title": "Investigación",
+            "item1": "Comprender puntos de fricción al reservar.",
+            "item2": "Identificar señales de confianza clave.",
+            "item3": "Analizar plataformas como Booking, Airbnb, Civitatis."
+        },
+        "objective3": {
+            "title": "UX",
+            "item1": "Mejorar claridad y reducir carga cognitiva.",
+            "item2": "Optimizar conversión con patrones CRO.",
+            "item3": "Diseñar un flujo de reserva simple y veloz."
+        },
+        "processTitle": "Proceso de Diseño",
+        "researchTitle": "Investigación",
+        "researchFindingsTitle": "Hallazgos Clave",
+        "finding1": "Los usuarios necesitan señales claras de confianza.",
+        "finding2": "Los detalles del PDP impactan directamente la conversión.",
+        "finding3": "Flujos simples aumentan la intención de reservar.",
+        "methodologyTitle": "Metodología",
+        "methodology": "Benchmarking + Análisis Competitivo",
+        "definitionTitle": "Definición",
+        "scopeTitle": "Alcance del Proyecto",
+        "scope1": "Landing Page orientada al CRO.",
+        "scope2": "Catálogo de Tours.",
+        "scope3": "Páginas PDP de cada tour.",
+        "scope4": "Flujo de reserva en 3 pasos.",
+        "ideationTitle": "Ideación",
+        "ideationFlowTitle": "Flujo de Experiencia",
+        "flow1": "El usuario llega a la página principal.",
+        "flow2": "Explora tours destacados.",
+        "flow3": "Revisa la PDP para detalles y confianza.",
+        "flow4": "Completa una reserva sin pago en línea.",
+        "screensTitle": "Pantallas",
+        "resultsTitle": "Resultados",
+        "resultsDescription": "Una experiencia centrada en conversión con UI limpia, señales de confianza y un flujo completo de e-commerce.",
+        "result1": "Flujo Landing → Catálogo → PDP → Reserva.",
+        "result2": "UI de alta fidelidad con consistencia visual.",
+        "result3": "Biblioteca de componentes escalable.",
+        "challengesTitle": "Desafíos y Aprendizajes",
+        "challenge1": "Balancear estética con necesidades de CRO.",
+        "challenge2": "Estructurar la información del PDP claramente.",
+        "challenge3": "Diseñar un flujo sin paso de pago en línea.",
+        "nextStepsTitle": "Siguientes Pasos",
+        "next1": "Implementar prototipo interactivo.",
+        "next2": "Añadir soporte multilenguaje.",
+        "next3": "Integrar disponibilidad en tiempo real."
     }
 }

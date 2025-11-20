@@ -681,5 +681,72 @@
         "nextStep2": "Experiment with analog photography and natural grain textures.",
         "nextStep3": "Explore collective exhibitions on emotional identity and self-perception.",
         "projects": "Projects"
+    },
+    "turismo": {
+        "title": "Tour Booking – UX/UI Case Study",
+        "meta": {
+            "categoryTitle": "CATEGORY",
+            "yearTitle": "YEAR",
+            "clientTitle": "CLIENT",
+            "category1": "UX/UI Design",
+            "category2": "E-commerce",
+            "category3": "Product Design",
+            "client": "Concept Project"
+        },
+        "description1": "A complete travel booking experience for Ecuador. Includes landing page, tour catalogue, PDP and a simplified reservation flow optimized for conversion (CRO).",
+        "toolsTitle": "Tech & Tools",
+        "objectiveTitle": "Project Objectives",
+        "objective1": {
+            "title": "Product",
+            "item1": "Create a complete tour booking experience.",
+            "item2": "Design landing, catalogue, PDP and checkout flow.",
+            "item3": "Build a modern and trustworthy visual system."
+        },
+        "objective2": {
+            "title": "Research",
+            "item1": "Understand user friction when booking tours.",
+            "item2": "Identify key trust signals.",
+            "item3": "Analyze Booking, Airbnb and Civitatis patterns."
+        },
+        "objective3": {
+            "title": "UX Goals",
+            "item1": "Improve clarity and reduce cognitive load.",
+            "item2": "Optimize conversion through CRO patterns.",
+            "item3": "Design a simple and fast reservation flow."
+        },
+        "processTitle": "Design Process",
+        "researchTitle": "Research",
+        "researchFindingsTitle": "Key Findings",
+        "finding1": "Users require clear trust signals before booking.",
+        "finding2": "PDP structure has a strong impact on conversion.",
+        "finding3": "Simple flows increase booking intent.",
+        "methodologyTitle": "Methodology",
+        "methodology": "Benchmarking + Competitive Analysis",
+        "definitionTitle": "Definition",
+        "scopeTitle": "Project Scope",
+        "scope1": "Landing page focused on CRO.",
+        "scope2": "Tours catalogue.",
+        "scope3": "Tour Product Detail Pages.",
+        "scope4": "3-step reservation flow.",
+        "ideationTitle": "Ideation",
+        "ideationFlowTitle": "Experience Flow",
+        "flow1": "User enters the main landing page.",
+        "flow2": "Explores featured tours.",
+        "flow3": "Opens the PDP for details and trust.",
+        "flow4": "Completes a booking without online payment.",
+        "screensTitle": "Screens",
+        "resultsTitle": "Results",
+        "resultsDescription": "A conversion-focused booking experience with clean UI, trust indicators and a full e-commerce style flow.",
+        "result1": "Landing → Catalogue → PDP → Reservation.",
+        "result2": "High-fidelity UI with consistent brand.",
+        "result3": "Scalable component library.",
+        "challengesTitle": "Challenges & Learnings",
+        "challenge1": "Balancing aesthetics with conversion needs.",
+        "challenge2": "Structuring PDP information clearly.",
+        "challenge3": "Designing a flow without online payment.",
+        "nextStepsTitle": "Next Steps",
+        "next1": "Implement interactive prototype.",
+        "next2": "Add language support.",
+        "next3": "Integrate real-time availability."
     }
 }
